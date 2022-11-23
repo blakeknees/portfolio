@@ -1,0 +1,100 @@
+@use "./variables";
+
+html {
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    // font-family: variables.$heading-font;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav,
+p {
+    font-family: 'Roboto';
+}
+
+p {
+    font-size: 400;
+}
+
+fieldset,
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+}
+
+footer {
+    // background-color: variables.$primary;
+    // color: variables.$secondary;
+    font-family: 'Roboto';
+    font-weight: 400;
+
+    p {
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+// CLASSES
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1750px;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// SET FONT SIZES!
+
+// HEADINGS:
+// h1: 79px;
+// h2: 45px;
+// h3: 40px;
+// h4: 25px;
+
+// OTHER TEXT:
+// button: 22.4px;
+// nav: 29px;
+// body text: 20px;
+
+button {
+    // font-family: variables.$heading-font;
+    // color: variables.$secondary;
+    text-transform: uppercase;
+    // background-color: variables.$primary;
+    padding: 10px 15px;
+    // border: 2px solid variables.$primary;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        // background-color: variables.$primary;
+    }
+
+    &:focus {
+        // background-color: variables.$primary;
+        // color: variables.$tertiary;
+    }
+}

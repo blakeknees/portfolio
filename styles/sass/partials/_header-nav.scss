@@ -1,0 +1,25 @@
+@use "./variables";
+
+header {
+    background-color: variables.$header;
+
+    .nav-bar-flex {
+        width: 40%;
+        margin-top: 40px;
+    
+        ul {
+            justify-content: space-between;
+            
+            li {
+                // color: variables.$tertiary;
+                font-size: 1.2rem;
+            }
+    
+            li a:hover {
+                margin: 2px;
+                // border-bottom: 3px solid variables.$primary;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,5 @@
+@use "./variables";
+
+.skills {
+    background-color: variables.$skills;
+}
