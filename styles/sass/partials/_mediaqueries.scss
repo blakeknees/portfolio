@@ -1,1 +1,80 @@
+@use "./variables";
 @use "./header-nav";
+@use "./contact.scss";
+@use "./projects";
+
+@media (max-width: 1401px) {
+    .wrapper {
+        width: 60%;
+    }
+
+    /* HEADER & NAV */
+    header {
+        height: 57vh;
+
+        button {
+            margin-top: 1.5rem;
+        }
+    } /* END header */
+
+    /* ABOUT */
+
+    main {
+        .about {
+            .wrapper {
+                width: 80%;
+            }
+            img {
+                width: 100px;
+            }
+    
+        }
+    
+        /* SKILLS */
+        .skills {
+            h2 {
+                margin-top: 3rem;
+            }
+    
+            .skills-container {
+                margin: 4rem;
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                
+                .icons {
+                    font-size: 3rem;
+                }
+                
+                span {
+                    
+                }
+            }
+        }
+
+        /* PROJECT */
+        .projects {
+            .wrapper {
+                width: 85%;
+            }
+        }
+
+        /* CONTACT */
+        .contact {
+            h2 {
+                margin-top: 5rem;
+            }
+            .form {
+                margin-bottom: 3rem;
+            
+                .submit-message {
+                    border: 5px solid pink;
+        
+                    input, textarea {
+                        border: 2px solid lavender;
+                    }
+                }
+            }
+        } 
+    } /* END main */
+}

@@ -1,9 +1,65 @@
 .about {
   background-color: #bbcbcb;
 }
+.about .about-container h2 {
+  margin-top: 0;
+  padding-top: 3rem;
+}
+.about .about-container .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 3rem;
+}
+.about .about-container .about-flex img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid purple;
+  margin-right: 4rem;
+}
+.about .about-container .about-flex p {
+  text-align: left;
+}
 
 .contact {
   background-color: #f9fbf2;
+}
+.contact h2 {
+  margin-top: 4rem;
+}
+.contact .form {
+  margin-bottom: 3rem;
+}
+.contact .form .submit-message {
+  border: 5px solid pink;
+}
+.contact .form .submit-message p span {
+  font-style: italic;
+}
+.contact .form .submit-message input, .contact .form .submit-message textarea {
+  border: 2px solid lavender;
+}
+.contact .form .submit-message input {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  width: 45%;
+  margin-left: 1.3rem;
+}
+.contact .form .submit-message input[type=email] {
+  width: 80%;
+  margin-left: 4rem;
+}
+.contact .form .submit-message textarea {
+  width: 90%;
+  padding: 15px 20px;
+  margin-left: 2.1rem;
+  margin-bottom: 2rem;
+}
+.contact .form .submit-message button {
+  width: 50%;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 
 footer {
@@ -18,7 +74,8 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 img {
@@ -27,11 +84,16 @@ img {
 
 nav,
 p {
-  font-family: "Roboto";
+  font-family: sans-serif;
 }
 
 p {
   font-size: 400;
+  text-align: center;
+}
+
+li {
+  list-style: none;
 }
 
 fieldset,
@@ -51,9 +113,9 @@ footer p {
 }
 
 .wrapper {
-  width: 85%;
+  width: 60%;
   margin: 0 auto;
-  max-width: 1750px;
+  max-width: 1901px;
 }
 
 .flex {
@@ -70,14 +132,14 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 button {
+  color: #dfe2cf;
   text-transform: uppercase;
+  background-color: #7698b3;
   padding: 10px 15px;
+  border: 2px solid #7698b3;
   font-size: 0.8rem;
   line-height: 1.2rem;
   text-align: center;
@@ -85,29 +147,170 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header {
-  background-color: #8b8bae;
+button:hover {
+  background-color: #634b66;
+  color: #f9fbf2;
 }
-header .nav-bar-flex {
-  width: 40%;
-  margin-top: 40px;
-}
-header .nav-bar-flex ul {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-header .nav-bar-flex ul li {
-  font-size: 1.2rem;
-}
-header .nav-bar-flex ul li a:hover {
-  margin: 2px;
+button:focus {
+  background-color: #634b66;
+  color: #f9fbf2;
 }
 
+header {
+  background-color: #8b8bae;
+  height: 45vh;
+}
+header .nav-bar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+}
+header .nav-bar-flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .nav-bar-flex ul li {
+  font-size: 1rem;
+  padding: 20px;
+  margin-top: 1rem;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+header .nav-bar-flex ul li a {
+  color: #374b4a;
+  text-decoration: none;
+}
+header .nav-bar-flex ul li a a:hover {
+  font-size: 2rem;
+}
+header .header-text-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-text-flex h1 {
+  color: #dfe2cf;
+}
+header .header-text-flex h1, header .header-text-flex p {
+  text-align: center;
+}
 .projects {
   background-color: #b288c0;
 }
+.projects h2 {
+  margin-top: 4rem;
+}
+.projects .project-container {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.projects .project-box {
+  background-color: #c5a3d0;
+  height: 30rem;
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
+  width: 25rem;
+  margin: 1rem;
+}
+.projects .project-box .project-content {
+  display: flex-column;
+  margin: 1rem;
+}
+.projects .project-box .project-content h3, .projects .project-box .project-content h4, .projects .project-box .project-content p {
+  text-align: left;
+}
+.projects .project-box .project-content h4 {
+  font-size: 0.75rem;
+}
+.projects .project-box .project-content p {
+  font-size: 0.75rem;
+}
+.projects .project-box .project-content .button-box {
+  margin-top: 1rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.projects .project-box .project-content .button-box button {
+  width: 30%;
+  margin-right: 1rem;
+}
 
+@media (max-width: 1401px) {
+  .wrapper {
+    width: 60%;
+  }
+  /* HEADER & NAV */
+  header {
+    height: 57vh;
+  }
+  header button {
+    margin-top: 1.5rem;
+  }
+  /* END header */
+  /* ABOUT */
+  main {
+    /* SKILLS */
+    /* PROJECT */
+    /* CONTACT */
+  }
+  main .about .wrapper {
+    width: 80%;
+  }
+  main .about img {
+    width: 100px;
+  }
+  main .skills h2 {
+    margin-top: 3rem;
+  }
+  main .skills .skills-container {
+    margin: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .skills .skills-container .icons {
+    font-size: 3rem;
+  }
+  main .projects .wrapper {
+    width: 85%;
+  }
+  main .contact h2 {
+    margin-top: 5rem;
+  }
+  main .contact .form {
+    margin-bottom: 3rem;
+  }
+  main .contact .form .submit-message {
+    border: 5px solid pink;
+  }
+  main .contact .form .submit-message input, main .contact .form .submit-message textarea {
+    border: 2px solid lavender;
+  }
+  /* END main */
+}
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -387,4 +590,33 @@ html {
 
 .skills {
   background-color: #7698b3;
+}
+.skills h2 {
+  margin-top: 3rem;
+}
+.skills .skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 100%;
+}
+.skills .skills-container .icons {
+  font-size: 3rem;
+  color: white;
+  display: flex-column;
+  width: 5rem;
+}
+.skills .skills-container span {
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 600;
+  margin: 0.5rem;
+  text-align: justify;
 }

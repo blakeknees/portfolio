@@ -8,7 +8,9 @@ h1,
 h2,
 h3,
 h4 {
-    text-transform: uppercase;
+    text-align: center;
+    font-family: sans-serif;
+    // text-transform: uppercase;
     // font-family: variables.$heading-font;
 }
 
@@ -18,11 +20,16 @@ img {
 
 nav,
 p {
-    font-family: 'Roboto';
+    font-family: sans-serif;
 }
 
 p {
     font-size: 400;
+    text-align: center;
+}
+
+li {
+    list-style: none;
 }
 
 fieldset,
@@ -47,9 +54,9 @@ footer {
 // CLASSES
 
 .wrapper {
-    width: 85%;
+    width: 60%;
     margin: 0 auto;
-    max-width: 1750px;
+    max-width: 1901px;
 }
 
 
@@ -60,7 +67,6 @@ footer {
 .flex-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 // SET FONT SIZES!
@@ -77,12 +83,11 @@ footer {
 // body text: 20px;
 
 button {
-    // font-family: variables.$heading-font;
-    // color: variables.$secondary;
+    color: variables.$button;
     text-transform: uppercase;
-    // background-color: variables.$primary;
+    background-color: variables.$skills;
     padding: 10px 15px;
-    // border: 2px solid variables.$primary;
+    border: 2px solid variables.$skills;
     font-size: 0.8rem;
     line-height: 1.2rem;
     text-align: center;
@@ -90,11 +95,12 @@ button {
     transition: 0.3s;
 
     &:hover {
-        // background-color: variables.$primary;
+        background-color: variables.$footer;
+        color: variables.$contact;
     }
 
     &:focus {
-        // background-color: variables.$primary;
-        // color: variables.$tertiary;
+        background-color: variables.$footer;
+        color: variables.$contact;
     }
 }

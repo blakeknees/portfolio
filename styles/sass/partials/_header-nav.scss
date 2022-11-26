@@ -2,23 +2,49 @@
 
 header {
     background-color: variables.$header;
+    height: 45vh;
 
     .nav-bar-flex {
-        width: 40%;
-        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     
         ul {
-            justify-content: space-between;
-            
+            display: flex;
             li {
-                // color: variables.$tertiary;
-                font-size: 1.2rem;
+                font-size: 1rem;
+                padding: 20px;
+                margin-top: 1rem;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
             }
-    
-            li a:hover {
-                margin: 2px;
-                // border-bottom: 3px solid variables.$primary;
+            
+            li a {
+                color: variables.$nav-links; 
+                text-decoration: none;
+
+                a:hover {
+                    font-size: 2rem;
+                }
             }
+        }
+    }
+
+    .header-text-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+        h1 {
+            color: variables.$h1;
+        }
+        h1, p {
+            text-align: center;
+        }
+
+        button {
+            
         }
     }
 

@@ -6,18 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennifer Blakney's Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
 
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
+    <!-- HEADER -->
     <header>
+        <!-- BURGER KING MENU -->
+        <!-- <button class="hamburger" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
 
-        <!-- NAV BAR -->
+        <button class="hamburger hamburger--spring" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button> -->
+
+        <!-- END BURGER KING MENU -->
+
+        <!-- NAV BAR-->
         <div class="flex-column wrapper">
             <nav class="nav-bar-flex">
-                <ul class="flex">
+                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -26,58 +42,196 @@
             </nav> <!-- END nav -->
 
             <!-- HEADER TEXT -->
-            <div class="flex">
-                <div class="header-text">
+            <div class="header-text-flex">
                     <h1>Jennifer Blakney</h1>
                     <p>Front-End Web Developer</p>
                     <button id="contact">Get in Touch</button>
-                </div>
             </div> <!-- END .flex-->
 
         </div> <!-- END .flex .wrapper -->
     </header>
 
     <main>
+        <!-- ABOUT -->
         <section class="about" id="about">
-
-            <div class="flex wrapper">
-                <h2>About Me</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab pariatur maxime esse neque iusto ex aut eos in tempora eum. Expedita sunt blanditiis laudantium possimus quas eaque voluptatibus suscipit repudiandae.</p>
+            <div class="wrapper">
+                <div class="about-container">
+                    <h2>About Me</h2>
+                    <div class="about-flex">
+                        <img src="./assets/pfp2022.jpg" alt="Picture of Jennifer smiling at the camera while sitting in her backyard.">
+                        <div class="flex-column">
+                            <p>
+                                I’m Jennifer Blakney (she/her), a front-end developer based in Hamilton, Ontario. Previously I
+                                have enjoyed positions in hospitality, cannabis, and most recently QA app testing. I got my certifications in web
+                                development at Juno College (Cohort 45) in 2022.
+                            </p>
+                            <p>
+                                I’m confident in my HTML, CSS and JavaScript skills, as well as other front end technologies. I’m especially passionate
+                                about accessible design and learning more about those practices. My combined experiences have taught me to communicate
+                                effectively, efficiently solve problems, and work well in a team.
+                            </p>
+                            
+                            <p>
+                                When not coding, I’m usually cooking, baking, walking my two dogs around Hamilton, or watching television with my
+                                partner. If you want to get to know me on the internet, visit my Medium, or connect with me on Twitter and LinkedIn.
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- END .about-container-->
             </div> <!-- END .flex .wrapper -->
 
-        </section>
+        </section> <!-- END ABOUT-->
 
+        <!-- SKILLS -->
         <section class="skills" id="skills">
 
-            <div class="flex wrapper">
+            <div class="flex-column wrapper">
                 <h2>Skills</h2>
+
+                <div class="skills-container">
+                    <i class="icons devicon-html5-plain"><span>html</span></i>
+                    <i class="icons devicon-css3-plain"><span>css</span></i>
+                    <i class="icons devicon-sass-original"><span>sass</span></i>
+                    <i class="icons devicon-javascript-plain"><span>JavaScript</span></i>
+                    <i class="icons devicon-react-original"><span>react</span></i>
+                    <i class="icons devicon-firebase-plain"><span>firebase</span></i>
+                    <i class="icons devicon-github-original"><span>github/git</span></i>
+                    <i class="icons devicon-jira-plain"><span>jira</span></i>
+                </div>
             </div>
 
-        </section>
+        </section> <!-- END SKILLS -->
 
+        <!-- PROJECTS -->
         <section class="projects" id="projects">
 
-            <div class="flex wrapper">
-                <h2>Projects</h2>
-            </div>
-
-        </section>
-
-        <section class="contact" id="contact">
-
             <div class="flex-column wrapper">
-                <h2>Contact</h2>
-    
-                <p>Get in touch with me, I'm always open to new opportunities.</p>
-    
-                <button>Email Jennifer</button>
-            </div>
+                
+                <h2>Projects</h2>
 
-        </section>
+                <div class="flex project-container">
+
+                    <div class="project-box">
+                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        </div>
+                        <div class="project-content">
+                            <div class="flex-column">
+                            <h3>Project Title Here</h3>
+                            <h4>HTML, CSS, JAVASCRIPT</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae atque, deleniti culpa!</p>
+                            </div>
+
+                            <div class="button-box flex">
+                                <button>View Live</button>
+                                <button>View Code</button>
+                            </div>
+                        </div>
+                    </div> <!-- END .project-box-->
+                    
+                    <div class="project-box">
+                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        </div>
+                        <div class="project-content">
+                            <div class="flex-column">
+                                <h3>Project Title Here</h3>
+                                <h4>HTML, CSS, JAVASCRIPT</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
+                                    atque, deleniti culpa!</p>
+                            </div>
+                    
+                            <div class="button-box flex">
+                                <button>View Live</button>
+                                <button>View Code</button>
+                            </div>
+                        </div>
+                    </div> <!-- END .project-box-->
+
+                    <div class="project-box">
+                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        </div>
+                        <div class="project-content">
+                            <div class="flex-column">
+                                <h3>Project Title Here</h3>
+                                <h4>HTML, CSS, JAVASCRIPT</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
+                                    atque, deleniti culpa!</p>
+                            </div>
+                    
+                            <div class="button-box flex">
+                                <button>View Live</button>
+                                <button>View Code</button>
+                            </div>
+                        </div>
+                    </div> <!-- END .project-box-->
+
+                    <div class="project-box">
+                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        </div>
+                        <div class="project-content">
+                            <div class="flex-column">
+                                <h3>Project Title Here</h3>
+                                <h4>HTML, CSS, JAVASCRIPT</h4>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
+                                    atque, deleniti culpa!</p>
+                            </div>
+                    
+                            <div class="button-box flex">
+                                <button>View Live</button>
+                                <button>View Code</button>
+                            </div>
+                        </div>
+                    </div> <!-- END .project-box-->
+                </div> <!-- END .flex-project-container -->
+            </div> <!-- END .flex-column .wrapper-->
+        </section> <!-- END PROJECTS -->
+
+        <!-- CONTACT -->
+        
+        <section class="contact" id="contact">
+            <div class="flex-column wrapper">
+               
+                <h2>Contact</h2>
+
+                <div class="flex">
+                    <i class="devicon-linkedin-plain"></i>
+                    <i class="devicon-twitter-original"></i>
+                </div>
+                <p>Get in touch with me, I'm always open to new opportunities.</p>
+
+                <p>Send me an email or complete the form below to get in touch.</p>
+
+                <div class="form">
+                
+                    <form action="#" method="#" class="submit-message" name="submit-message">
+                        <p>Please fill out <span>all</span> of the information below:</p>
+                
+                        <!-- Name Box -->
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" placeholder="Name" id="name">
+
+                        <!-- Pronoun Box -->
+                        <label for="pronouns" class="sr-only">Pronouns</label>
+                        <input type="text" placeholder="eg., she/her, they/them, he/him" id="pronouns">
+                
+                        <!-- Email Box -->
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" placeholder="Email address" id="email">
+                
+                        <!-- Message Area & Button -->
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
+                
+                        <button class="submit-button">Submit</button>
+                
+                    </form>
+                </div> <!-- END .form -->
+
+        </section> <!-- END CONTACT -->
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <div class="flex wrapper">
+        <div class="flex-column wrapper">
             <p>Built in 2022 by Jennifer Blakney</p>
         </div>
     </footer>

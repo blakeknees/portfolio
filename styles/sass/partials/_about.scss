@@ -2,4 +2,30 @@
 
 .about {
     background-color: variables.$about;
+      
+    .about-container {
+        
+        h2 {
+            margin-top: 0;
+            padding-top: 3rem;
+        }
+
+        .about-flex {
+            display: flex;
+            padding-bottom: 3rem;
+            
+            img {
+                height: 300px;
+                width: 300px;
+                border-radius: 50%;
+                border: 5px solid purple;
+                margin-right: 4rem;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+    }
 }

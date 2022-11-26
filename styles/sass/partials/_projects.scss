@@ -1,5 +1,50 @@
 @use "./variables";
 
 .projects {
-    background-color: variables.$projects;
+    background-color: variables.$projects;   
+
+    h2 {
+        margin-top: 4rem;
+    }
+
+    .project-container {
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .project-box {
+            background-color: #c5a3d0;
+            height: 30rem;
+            flex-basis: 46%;
+            width: 25rem;
+            margin: 1rem;
+
+            .project-content {
+                display: flex-column;
+                margin: 1rem;
+                h3, h4, p {
+                    text-align: left;
+                }
+
+                h4 {
+                    font-size: .75rem;
+                }
+                
+                p {
+                    font-size: .75rem;
+                }
+                .button-box {
+                    margin-top: 1rem;
+                    justify-content: flex-start;
+
+                    button{
+                        width: 30%;
+                        margin-right: 1rem;
+                    }
+                }
+
+            }
+        }
 }
