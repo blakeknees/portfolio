@@ -1,7 +1,4 @@
 @use "./variables";
-@use "./header-nav";
-@use "./contact.scss";
-@use "./projects";
 
 @media (max-width: 1401px) {
     .wrapper {
@@ -22,33 +19,30 @@
     main {
         .about {
             .wrapper {
-                width: 80%;
+                width: 75%;
             }
-            img {
-                width: 100px;
+
+            .about-flex {
+                img.rounded {
+                margin-right: 4rem;
+                margin-top: 2.5rem;
+                }
             }
     
         }
     
         /* SKILLS */
         .skills {
+            .wrapper {
+                width: 90%;
+            }
+
             h2 {
                 margin-top: 3rem;
             }
-    
-            .skills-container {
-                margin: 4rem;
-                display: flex;
-                flex-wrap: wrap;
-                // justify-content: space-between;
-                
-                .icons {
-                    font-size: 3rem;
-                }
-                
-                span {
-                    
-                }
+            
+            ul {
+                width: 90%;
             }
         }
 
@@ -78,3 +72,93 @@
         } 
     } /* END main */
 }
+
+/* TABLET */
+@media (max-width: 1024px) {
+    /* HEADER*/
+
+}
+
+
+
+/* MOBILE */
+@media (max-width: 801px) {
+    /* HEADER */
+    header {
+        .burger-toggle {
+            display: block;
+            padding-bottom: 3rem;
+        }
+    
+        .nav-bar-flex {
+            display: none;
+        }
+    
+        h2 {
+            margin-top: 2rem;
+        }
+    }
+
+    /* MAIN */
+    main {
+        .about {
+            .about-container {
+                h2 {
+                    padding-top: 5rem;
+                    padding-bottom: 1rem;
+                }
+                .about-flex {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    img.rounded{
+                        height: 250px;
+                        width: 200px;
+                        margin: 0 0 1rem 0;
+                    }
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            .skills-container {
+               li {
+                flex-basis: 50%;
+
+                span {
+                    padding-top: 1rem;
+                }
+               }
+                   
+            }
+        }
+
+        .projects {
+            .wrapper {
+                width: 90%;
+            }
+
+            .project-container {
+                justify-content: center;
+                .project-box {
+                    flex-basis: 70%;
+                    width: 60rem;
+        
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 601px) {
+    /* HEADER */
+    header {
+    
+    }
+}
+

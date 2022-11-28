@@ -14,12 +14,14 @@
             display: flex;
             padding-bottom: 3rem;
             
-            img {
+            img.rounded {
                 height: 300px;
                 width: 300px;
-                border-radius: 50%;
-                border: 5px solid purple;
+                border-radius: 20%;
+                object-fit: fill;
+                border: 5px solid #8fbdbd;
                 margin-right: 4rem;
+                margin-top: 1.25rem;
             }
 
             p {
