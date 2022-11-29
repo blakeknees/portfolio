@@ -6,6 +6,7 @@
     .about-container {
         
         h2 {
+            color: variables.$h2purple;
             margin-top: 0;
             padding-top: 3rem;
         }
@@ -15,16 +16,17 @@
             padding-bottom: 3rem;
             
             img.rounded {
-                height: 300px;
-                width: 300px;
+                height: 350px;
+                width: 350px;
                 border-radius: 20%;
                 object-fit: fill;
-                border: 5px solid #8fbdbd;
+                border: 5px solid variables.$img-border;
                 margin-right: 4rem;
                 margin-top: 1.25rem;
             }
 
             p {
+                color: variables.$body;
                 text-align: left;
             }
         }

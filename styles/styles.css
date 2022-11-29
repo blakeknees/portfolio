@@ -2,6 +2,7 @@
   background-color: #bbcbcb;
 }
 .about .about-container h2 {
+  color: #7e5a9b;
   margin-top: 0;
   padding-top: 3rem;
 }
@@ -12,8 +13,8 @@
   padding-bottom: 3rem;
 }
 .about .about-container .about-flex img.rounded {
-  height: 300px;
-  width: 300px;
+  height: 350px;
+  width: 350px;
   border-radius: 20%;
   -o-object-fit: fill;
      object-fit: fill;
@@ -22,6 +23,7 @@
   margin-top: 1.25rem;
 }
 .about .about-container .about-flex p {
+  color: #374b4a;
   text-align: left;
 }
 
@@ -134,29 +136,41 @@ input:checked ~ span:nth-last-child(2) {
   background-color: #f9fbf2;
 }
 .contact h2 {
+  color: #395c78;
   margin-top: 4rem;
+}
+.contact p {
+  color: #2c4553;
+  padding-bottom: 1rem;
 }
 .contact ul {
   margin: auto;
+  padding-bottom: 2rem;
+  padding-left: 0;
 }
 .contact ul li i {
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 1rem;
+  color: #7e5a9b;
 }
 .contact ul li i:hover {
-  color: teal;
-  font-size: 4rem;
+  color: #b322b0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+.contact a {
+  color: #b322b0;
+  font-weight: bold;
 }
 .contact .form {
   margin-bottom: 3rem;
 }
 .contact .form .submit-message {
-  border: 5px solid pink;
+  border: 5px solid #f9c2cb;
+  border-radius: 3%;
 }
-.contact .form .submit-message p span {
-  font-style: italic;
+.contact .form .submit-message p {
+  color: #2c4553;
 }
 .contact .form .submit-message input, .contact .form .submit-message textarea {
   border: 2px solid lavender;
@@ -181,10 +195,29 @@ input:checked ~ span:nth-last-child(2) {
   width: 50%;
   margin-left: 10rem;
   margin-bottom: 2rem;
+  font-family: "Source Sans Pro";
 }
 
 footer {
   background-color: #634b66;
+}
+footer .footer-container {
+  margin-top: 2rem;
+}
+footer .footer-container button {
+  font-family: "Sintony";
+  margin: auto;
+  width: 20%;
+}
+footer .footer-container button a {
+  color: #f9fbf2;
+}
+footer .footer-container button a:hover, footer .footer-container button a:focus {
+  color: #374b4a;
+}
+footer .footer-container button:hover, footer .footer-container button:focus {
+  background-color: #bbcbcb;
+  border: 2px solid #bbcbcb;
 }
 
 html {
@@ -196,7 +229,8 @@ h2,
 h3,
 h4 {
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
 }
 
 img {
@@ -205,11 +239,11 @@ img {
 
 nav,
 p {
-  font-family: sans-serif;
+  font-family: "Sintony", sans-serif;
 }
 
 p {
-  font-size: 400;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -217,18 +251,49 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+button {
+  color: #dfe2cf;
+  text-transform: uppercase;
+  background-color: #7698b3;
+  padding: 10px 15px;
+  border: 2px solid #7698b3;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #634b66;
+  border: 2px solid #634b66;
+  color: #f9fbf2;
+}
+button:focus {
+  background-color: #634b66;
+  border: 2px solid #634b66;
+  color: #f9fbf2;
+  border-radius: 5%;
+}
+
 fieldset,
 input,
 textarea {
   border: none;
   background-color: transparent;
+  font-family: "Sintony", sans-serif;
 }
 
 footer {
-  font-family: "Roboto";
   font-weight: 400;
 }
 footer p {
+  font-family: "Source Sans Pro";
+  color: #dfe2cf;
   padding: 15px 0;
   text-align: center;
 }
@@ -255,26 +320,22 @@ footer p {
           flex-direction: column;
 }
 
-button {
-  color: #dfe2cf;
-  text-transform: uppercase;
-  background-color: #7698b3;
-  padding: 10px 15px;
-  border: 2px solid #7698b3;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: 0.75mm;
 }
-button:hover {
-  background-color: #634b66;
-  color: #f9fbf2;
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: 0.75mm;
 }
-button:focus {
-  background-color: #634b66;
-  color: #f9fbf2;
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 header {
@@ -333,13 +394,58 @@ header .header-text-flex h1 {
 header .header-text-flex h1, header .header-text-flex p {
   text-align: center;
 }
+header .header-text-flex p {
+  color: #b322b0;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1mm;
+}
+header .header-text-flex button {
+  font-family: "Sintony";
+}
+header .header-text-flex button a {
+  color: #dfe2cf;
+}
+header .header-text-flex button a:hover, header .header-text-flex button a:focus {
+  color: #395c78;
+}
+header .header-text-flex button:hover, header .header-text-flex button:focus {
+  background-color: #f9c2cb;
+  border: 2px solid #f9c2cb;
+}
+
+@media (max-width: 1601px) {
+  /* HEADER */
+  header {
+    height: 70vh;
+  }
+  header button {
+    margin-top: 1.5rem;
+  }
+  /* MAIN */
+  main .about .about-container .about-flex img.rounded {
+    margin-top: 3.5rem;
+  }
+  main .projects .wrapper {
+    width: 90%;
+  }
+  main .projects .project-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .projects .project-container .project-box {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
 @media (max-width: 1401px) {
   .wrapper {
     width: 60%;
   }
   /* HEADER & NAV */
   header {
-    height: 57vh;
+    height: 70vh;
   }
   header button {
     margin-top: 1.5rem;
@@ -354,9 +460,9 @@ header .header-text-flex h1, header .header-text-flex p {
   main .about .wrapper {
     width: 75%;
   }
-  main .about .about-flex img.rounded {
+  main .about .about-container .about-flex img.rounded {
     margin-right: 4rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
   }
   main .skills .wrapper {
     width: 90%;
@@ -369,6 +475,12 @@ header .header-text-flex h1, header .header-text-flex p {
   }
   main .projects .wrapper {
     width: 85%;
+  }
+  main .projects .project-container .project-box .project-content .button-box {
+    margin-left: 1rem;
+  }
+  main .projects .project-container .project-box .project-content .button-box button {
+    width: 50%;
   }
   main .contact h2 {
     margin-top: 5rem;
@@ -385,8 +497,81 @@ header .header-text-flex h1, header .header-text-flex p {
   /* END main */
 }
 /* TABLET */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   /* HEADER*/
+  /* MAIN */
+  main .projects .project-container .project-box h3 {
+    font-size: 1rem;
+  }
+  main .contact .form .submit-message input {
+    margin-left: 1rem;
+  }
+  main .contact .form .submit-message input[type=email] {
+    margin-left: 3rem;
+  }
+  main .contact .form .submit-message textarea {
+    margin-left: 1.5rem;
+  }
+  main .contact .form .submit-message button {
+    margin-left: 8.5rem;
+  }
+  footer .footer-container button {
+    width: 40%;
+  }
+}
+@media (max-width: 1096px) {
+  header {
+    height: 75vh;
+  }
+  main .about .about-container .about-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about .about-container .about-flex img.rounded {
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 2rem;
+  }
+  main .about .about-container .about-flex p {
+    text-align: center;
+  }
+  main .projects .project-container .project-box {
+    height: 27rem;
+  }
+  main .projects .project-container .project-box h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  main .projects .project-container .project-box h4 {
+    text-align: center;
+  }
+  main .projects .project-container .project-box p {
+    font-size: 0.65rem;
+    text-align: center;
+  }
+}
+@media (max-width: 951px) {
+  /* MAIN */
+  main .contact .form .submit-message button {
+    margin-left: 7rem;
+  }
+}
+@media (max-width: 901px) {
+  main .projects .project-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  main .projects .project-container .project-box {
+    height: 40rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 /* MOBILE */
 @media (max-width: 801px) {
@@ -419,8 +604,6 @@ header .header-text-flex h1, header .header-text-flex p {
             align-items: center;
   }
   main .about .about-container .about-flex img.rounded {
-    height: 250px;
-    width: 200px;
     margin: 0 0 1rem 0;
   }
   main .about .about-container .about-flex p {
@@ -444,16 +627,98 @@ header .header-text-flex h1, header .header-text-flex p {
   main .projects .project-container .project-box {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-    width: 60rem;
+    width: 25rem;
+  }
+  main .contact .wrapper {
+    width: 90%;
+  }
+  main .contact .form .submit-message {
+    width: 100%;
+  }
+  main .contact .form .submit-message input {
+    margin-left: 1.1rem;
+    font-size: 80%;
+  }
+  main .contact .form .submit-message input[type=email] {
+    margin-left: 3rem;
+  }
+  main .contact .form .submit-message textarea {
+    font-size: 80%;
+    margin-left: 1.75rem;
+  }
+  main .contact .form .submit-message button {
+    margin-left: 9rem;
   }
 }
-@media (max-width: 601px) {
-  /* HEADER */
+@media (max-width: 701px) {
+  /* MAIN */
+  main .contact .wrapper {
+    width: 85%;
+  }
+  main .contact .submit-message input {
+    margin: 0;
+    font-size: 40%;
+  }
+  main .contact .submit-message input[type=email] {
+    margin-left: 3rem;
+  }
+  main .contact .submit-message textarea {
+    font-size: 50%;
+    margin-left: 1.75rem;
+  }
+  main .contact .submit-message button {
+    margin-left: 9rem;
+  }
+}
+@media (max-width: 651px) {
+  /* MAIN */
+  main .contact .form .submit-message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .contact .form .submit-message input {
+    margin-left: 4rem;
+  }
+}
+@media (max-width: 591px) {
+  main .projects .wrapper {
+    width: 80%;
+  }
+  main .projects .project-container .project-box {
+    width: 20rem;
+    height: 30rem;
+  }
+  main .contact .form .submit-message button {
+    margin-left: 6rem;
+  }
+  footer .footer-container button {
+    width: 50%;
+  }
+}
+@media (max-width: 451px) {
+  main .projects .wrapper {
+    width: 90%;
+  }
+  main .projects .project-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+  main .projects .project-container .project-box {
+    width: 16rem;
+  }
 }
 .projects {
   background-color: #b288c0;
 }
 .projects h2 {
+  color: #395c78;
   margin-top: 4rem;
 }
 .projects .project-container {
@@ -472,6 +737,18 @@ header .header-text-flex h1, header .header-text-flex p {
       flex-basis: 46%;
   width: 25rem;
   margin: 1rem;
+}
+.projects .project-box h3, .projects .project-box p {
+  color: #374b4a;
+}
+.projects .project-box h4 {
+  color: #374b4a;
+}
+.projects .project-box img {
+  height: 200px;
+  width: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .projects .project-box .project-content {
   display: flex-column;
@@ -495,6 +772,10 @@ header .header-text-flex h1, header .header-text-flex p {
 .projects .project-box .project-content .button-box button {
   width: 30%;
   margin-right: 1rem;
+  font-family: "Source Sans Pro";
+}
+.projects .project-box .project-content .button-box button a {
+  color: #dfe2cf;
 }
 
 html {
@@ -515,10 +796,6 @@ header,
 nav,
 section {
   display: block;
-}
-
-h1 {
-  font-size: 2em;
 }
 
 figcaption,
@@ -783,6 +1060,7 @@ html {
   padding-bottom: 3rem;
 }
 .skills .skills-container h2 {
+  color: #3c504a;
   margin-bottom: 2rem;
 }
 .skills .skills-container ul {
@@ -834,4 +1112,15 @@ html {
   font-size: 0.75rem;
   margin: 0.5rem;
   text-align: justify;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../assets/fonts/SourceSans/SourceSansPro-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Sintony";
+  src: url("../../../assets/fonts/Sintony/Sintony-Regular.ttf");
+  font-weight: 400;
 }

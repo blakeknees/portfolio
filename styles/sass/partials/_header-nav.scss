@@ -46,9 +46,27 @@ header {
         h1, p {
             text-align: center;
         }
-
+        p {
+            color: variables.$accent;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: 1mm;
+        }
         button {
-            
+            font-family: variables.$body-font;
+
+            a {
+                color: variables.$h1;
+                &:hover, &:focus {
+                    color: variables.$h2blue;
+                }
+            }
+
+            &:hover, &:focus {
+                background-color: variables.$contact-border;
+                border: 2px solid variables.$contact-border;
+            }
+
         }
     }
 

@@ -2,4 +2,27 @@
 
 footer {
     background-color: variables.$footer;
+
+    .footer-container {
+        margin-top: 2rem;
+
+        button {
+            font-family: variables.$body-font;
+            margin: auto;
+            width: 20%;
+            
+            a {
+                color: variables.$contact;
+
+                &:hover, &:focus {
+                    color: variables.$nav-links;
+                }
+            }
+
+            &:hover, &:focus {
+                background-color: variables.$about;
+                border: 2px solid variables.$about;
+            }
+        }
+    }
 }

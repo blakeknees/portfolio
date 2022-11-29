@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
 
 </head>
 <body>
@@ -58,7 +62,8 @@
             <div class="header-text-flex">
                     <h1>Jennifer Blakney</h1>
                     <p>Front-End Web Developer</p>
-                    <button id="contact">Get in Touch</button>
+                    <button><a href="#contact-form">Get in Touch</a>
+                    </button>
             </div> <!-- END .flex-->
 
         </div> <!-- END .flex .wrapper -->
@@ -148,72 +153,72 @@
                 <div class="flex project-container">
 
                     <div class="project-box">
-                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        <div class="project-pic"><img src="./assets/boat-ride-adventures.png" alt="Screenshot of Boat Ride Adventures Header">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
                             <h3>Boat Ride Adventures</h3>
-                            <h4>HTML, CSS, JAVASCRIPT</h4>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae atque, deleniti culpa!</p>
+                            <h4>HTML, CSS</h4>
+                            <p>First bootcamp project was to build a three page website based on a given brief.</p>
                             </div>
 
                             <div class="button-box flex">
-                                <button>View Live</button>
-                                <button>View Code</button>
+                                <button><a href="https://beamish-quokka-0a63ba.netlify.app/" target="_blank">View Live</a></button>
+
+                                <button><a href="https://github.com/blakeknees/jenn-blakney-project-one" target="_blank">View Code</a></button>
                             </div>
                         </div>
                     </div> <!-- END .project-box-->
                     
                     <div class="project-box">
-                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        <div class="project-pic"><img src="./assets/contact-form.png" alt="Screenshot of Boat Ride Adventures Contact Page and Form">
+                        </div>
+                        <div class="project-content">
+                            <div class="flex-column">
+                                <h3>Boat Ride Contact Form</h3>
+                                <h4>JAVASCRIPT</h4>
+                                <p>In my first JavaScript assignment I created functionality to the form on my Contact page</p>
+                            </div>
+                    
+                            <div class="button-box flex">
+                                <button><a href="https://exquisite-platypus-b955fa.netlify.app/contact.html" target="_blank">View Live</a></button>
+                                <button><a href="https://github.com/blakeknees/jenn-blakney-project-one/tree/my-feature-branch" target="_blank">View Code</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div> <!-- END .project-box-->
+
+                    <div class="project-box">
+                        <div class="project-pic"><img src="./assets/brewery-finder.png" alt="Screenshot of Brewery Finder App">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
                                 <h3>Brewery Finder</h3>
                                 <h4>HTML, CSS, JAVASCRIPT</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
-                                    atque, deleniti culpa!</p>
+                                <p>Using a public brewery API, this paired project displayed brewery selections based on city and type.</p>
                             </div>
                     
                             <div class="button-box flex">
-                                <button>View Live</button>
-                                <button>View Code</button>
+                                <button><a href="https://comforting-sfogliatella-fb8929.netlify.app/" target="_blank">View Live</a></button>
+                                <button><a href="https://github.com/breweryFinder/breweryFinder" target="_blank">View Code</a>
+                                </button>
                             </div>
                         </div>
                     </div> <!-- END .project-box-->
 
                     <div class="project-box">
-                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
+                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="Placeholder Bear, isn't it cute??">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
                                 <h3>Project 3 Coming Soon!</h3>
-                                <h4>HTML, CSS, JAVASCRIPT</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
-                                    atque, deleniti culpa!</p>
+                                <h4>REACT JS</h4>
+                                <p>Watch this space for a fun React app! Until then, enjoy this picture of a bear.</p>
                             </div>
                     
                             <div class="button-box flex">
-                                <button>View Live</button>
-                                <button>View Code</button>
-                            </div>
-                        </div>
-                    </div> <!-- END .project-box-->
-
-                    <div class="project-box">
-                        <div class="project-pic"><img src="https://placebear.com/g/800/400" alt="placeholder bear">
-                        </div>
-                        <div class="project-content">
-                            <div class="flex-column">
-                                <h3>Project 4 Coming Soon!</h3>
-                                <h4>HTML, CSS, JAVASCRIPT</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis voluptatum praesentium ab recusandae
-                                    atque, deleniti culpa!</p>
-                            </div>
-                    
-                            <div class="button-box flex">
-                                <button>View Live</button>
-                                <button>View Code</button>
+                                <button><View href="#" target="_blank">View Live</a></button>
+                                <button><View href="#" target="_blank">View Code</a></button>
                             </div>
                         </div>
                     </div> <!-- END .project-box-->
@@ -229,24 +234,32 @@
                 <h2>Contact</h2>
 
                 <ul class="flex">
-                    <li>
+                    <a href="https://www.linkedin.com/in/jenniferblakney/" target="_blank">
+                        <li>
                         <i class="devicon-linkedin-plain"></i>
-                    </li>
-                    <li>
+                        </li>
+                    </a>
+                    
+                    <a href="https://github.com/blakeknees" target="_blank"><li>
                         <i class="icons devicon-github-original"></i>
-                    </li>
-                    <li>
+                        </li>
+                    </a>
+                    
+                    <a href="https://twitter.com/blakeknees" target="_blank">
+                        <li>
                         <i class="devicon-twitter-original"></i>
-                    </li>   
+                        </li>
+                    </a>
+                     
                 </ul>
                 <p>I'm always open to new opportunities, or just chatting about projects and code!</p>
 
-                <p>Send me an email or complete the form below to get in touch.</p>
+                <p>Send me an <a href="mailto: jenniferblakney@gmail.com">email</a> or complete the form below to get in touch.</p>
 
-                <div class="form">
+                <div class="form" id="contact-form">
                 
                     <form action="#" method="POST" class="submit-message" name="submit-message">
-                        <p>Please fill out <span>all</span> of the information:</p>
+                        <p>Please fill out <em>all</em> of the information:</p>
                 
                         <!-- Name Box -->
                         <label for="name" class="sr-only">Name</label>
@@ -264,7 +277,7 @@
                         <label for="message" class="sr-only">Message</label>
                         <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
                 
-                        <button class="submit-button">Submit</button>
+                        <button class="submit-button" type="submit" formtarget="_blank">Submit</button>
                 
                     </form>
                 </div> <!-- END .form -->
@@ -275,7 +288,13 @@
     <!-- FOOTER -->
     <footer>
         <div class="flex-column wrapper">
-            <p>Built in 2022 by Jennifer Blakney</p>
+            <div class="flex-column footer-container">
+                <button>
+                    <a href="#home">Back to Top</a>
+                </button>
+    
+                <p>Built in 2022 by Jennifer Blakney</p>
+            </div>
         </div>
     </footer>
 

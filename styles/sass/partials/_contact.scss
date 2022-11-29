@@ -4,34 +4,47 @@
     background-color: variables.$contact;
 
     h2 {
+        color: variables.$h2blue;
         margin-top: 4rem;
+    }
+
+    p {
+        color: variables.$body2;
+        padding-bottom: 1rem;
     }
     ul {
         margin: auto;
+        padding-bottom: 2rem;
+        padding-left: 0;
         li {
             i {
-                font-size: 3rem;
+                font-size: 2rem;
                 padding: 1rem;
+                color: variables.$h2purple;
 
                 &:hover {
-                    color: teal;
-                    font-size: 4rem;
+                    color: variables.$accent;
                     transition: 0.3s;
-                    // transform: scale(0.5);
                 }
             }
         }
+    }
+
+    a {
+        color: variables.$accent;
+        font-weight: bold;
     }
     .form {
         margin-bottom: 3rem;
 
         .submit-message {
 
-            p span {
-                font-style: italic;
-            }
+            border: 5px solid variables.$contact-border;
+            border-radius: 3%;
 
-            border: 5px solid pink;
+            p {
+                color: variables.$body2;
+            }
     
             input, textarea {
                 border: 2px solid lavender;
@@ -60,6 +73,7 @@
                 width: 50%;
                 margin-left: 10rem;
                 margin-bottom: 2rem;
+                font-family: variables.$title-font;
             }
         }
     }

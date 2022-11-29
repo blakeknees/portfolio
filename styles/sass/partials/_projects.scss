@@ -4,6 +4,7 @@
     background-color: variables.$projects;   
 
     h2 {
+        color: variables.$h2blue;
         margin-top: 4rem;
     }
 
@@ -20,6 +21,19 @@
             flex-basis: 46%;
             width: 25rem;
             margin: 1rem;
+
+            h3, p {
+                color: variables.$body;
+            }
+            h4 {
+                color: variables.$nav-links;
+            }
+
+            img {
+                height: 200px;
+                width: 800px;
+                object-fit: cover;
+            }
 
             .project-content {
                 display: flex-column;
@@ -40,9 +54,14 @@
                     margin-top: 1rem;
                     justify-content: flex-start;
 
-                    button{
+                    button {
                         width: 30%;
                         margin-right: 1rem;
+                        font-family: variables.$title-font;
+
+                        a {
+                            color: variables.$h1;
+                        }
                     }
                 }
 
