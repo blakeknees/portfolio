@@ -26,6 +26,10 @@
   color: #374b4a;
   text-align: left;
 }
+.about .about-container .about-flex p a {
+  color: #374b4a;
+  text-decoration: underline;
+}
 
 .burger-toggle {
   display: none;
@@ -40,9 +44,11 @@
 }
 .burger-toggle a {
   text-decoration: none;
-  color: purple;
+  color: #7e5a9b;
+  font-family: "Sintony";
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  margin-left: 3rem;
 }
 
 .burger-toggle input {
@@ -193,7 +199,7 @@ input:checked ~ span:nth-last-child(2) {
 }
 .contact .form .submit-message button {
   width: 50%;
-  margin-left: 10rem;
+  margin-left: 14rem;
   margin-bottom: 2rem;
   font-family: "Source Sans Pro";
 }
@@ -340,7 +346,7 @@ h4 {
 
 header {
   background-color: #8b8bae;
-  height: 45vh;
+  height: 65vh;
 }
 header .hamburger {
   display: none;
@@ -402,6 +408,7 @@ header .header-text-flex p {
 }
 header .header-text-flex button {
   font-family: "Sintony";
+  margin-top: 2rem;
 }
 header .header-text-flex button a {
   color: #dfe2cf;
@@ -498,7 +505,6 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
 }
 /* TABLET */
 @media (max-width: 1100px) {
-  /* HEADER*/
   /* MAIN */
   main .projects .project-container .project-box h3 {
     font-size: 1rem;

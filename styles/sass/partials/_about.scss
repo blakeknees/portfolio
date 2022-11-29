@@ -28,6 +28,11 @@
             p {
                 color: variables.$body;
                 text-align: left;
+
+                a {
+                    color: variables.$body;
+                    text-decoration: underline;
+                }
             }
         }
 

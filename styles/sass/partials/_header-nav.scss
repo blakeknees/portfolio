@@ -2,7 +2,7 @@
 
 header {
     background-color: variables.$header;
-    height: 45vh;
+    height: 65vh;
 
     .hamburger {
         display: none;
@@ -54,6 +54,7 @@ header {
         }
         button {
             font-family: variables.$body-font;
+            margin-top: 2rem;
 
             a {
                 color: variables.$h1;

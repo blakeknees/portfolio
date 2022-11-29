@@ -17,9 +17,10 @@
     
     a {
         text-decoration: none;
-        color: purple;
-    
+        color: variables.$h2purple;
+        font-family: variables.$body-font;
         transition: color 0.3s ease;
+        margin-left: 3rem;
     }
 }
 
