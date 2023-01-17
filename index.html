@@ -258,29 +258,28 @@
                 <p>Complete the form below to get in touch.</p>
 
                 <div class="form" id="contact-form">
-                
-                    <form action="#" method="POST" class="submit-message" name="submit-message">
+
+                    <form action="https://formspree.io/f/mzbqzevk" method="POST" class="submit-message">
                         <p>Please fill out <em>all</em> of the information:</p>
-                
                         <!-- Name Box -->
                         <label for="name" class="sr-only">Name</label>
-                        <input type="text" placeholder="Name" id="name">
-
+                        <input type="text" name="text" placeholder="Name" id="name">
+                        
                         <!-- Pronoun Box -->
                         <label for="pronouns" class="sr-only">Pronouns</label>
-                        <input type="text" placeholder="eg., she/her, they/them, he/him" id="pronouns">
-                
+                        <input type="text" name="pronouns" placeholder="Pronouns (she/he/they/xir/etc)" id="pronouns">
+                        
                         <!-- Email Box -->
-                        <!-- <label for="email" class="sr-only">Email</label>
-                        <input type="email" placeholder="Email address" id="email"> -->
-                
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" placeholder="Email" id="email">
+                        
                         <!-- Message Area & Button -->
                         <label for="message" class="sr-only">Message</label>
                         <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
-                
-                        <button class="submit-button" type="submit" formtarget="_blank">Submit</button>
-                
+                        <!-- your other form fields go here -->
+                        <button type="submit" class="submit-button" formtarget="_blank">Submit</button>
                     </form>
+                
                 </div> <!-- END .form -->
 
         </section> <!-- END CONTACT -->
@@ -299,5 +298,6 @@
         </div>
     </footer>
 
+<script src="./script.js"></script>    
 </body>
 </html>
