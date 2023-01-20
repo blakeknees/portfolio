@@ -207,9 +207,6 @@ input:checked ~ span:nth-last-child(2) {
 footer {
   background-color: #634b66;
 }
-footer .footer-container {
-  margin-top: 2rem;
-}
 footer .footer-container button {
   font-family: "Sintony";
   margin: auto;
@@ -346,8 +343,8 @@ h4 {
 
 #to-top {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 15px;
+  right: 16px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
