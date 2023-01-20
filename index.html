@@ -5,19 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jennifer Blakney's Portfolio</title>
+    <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- ANIMATE ON SCROLL -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <!-- SCROLL TO TOP ICONS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aarrow_upward%3A" />
+    
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
 
 </head>
 <body>
-
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
 
     <!-- HEADER -->
     <header id="home">
@@ -257,9 +272,9 @@
 
                 <p>Complete the form below to get in touch.</p>
 
-                <div class="form" id="contact-form">
+                <div class="form">
 
-                    <form action="https://formspree.io/f/mzbqzevk" method="POST" class="submit-message">
+                    <form action="https://formspree.io/f/mzbqzevk" method="POST" class="submit-message" id="contact-form">
                         <p>Please fill out <em>all</em> of the information:</p>
                         <!-- Name Box -->
                         <label for="name" class="sr-only">Name</label>
@@ -277,7 +292,7 @@
                         <label for="message" class="sr-only">Message</label>
                         <textarea name="message" id="message" placeholder="Message" cols="30" rows="8"></textarea>
                         <!-- your other form fields go here -->
-                        <button type="submit" class="submit-button" formtarget="_blank">Submit</button>
+                        <button type="submit" class="submit-button">Submit</button>
                     </form>
                 
                 </div> <!-- END .form -->
@@ -298,6 +313,7 @@
         </div>
     </footer>
 
-<script src="./script.js"></script>    
+<script src="./script.js"></script>  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
 </body>
 </html>

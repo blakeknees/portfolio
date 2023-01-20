@@ -1,33 +1,40 @@
-// STEPS:
-// Listen for when form submits - addEventListener (click)
-// On submit click, display an alert
-// IF there’s a message alert “thank you”, ELSE alert “please enter a message”
+const portfolio = {};
 
-// Target necessary elements (form, input, textarea, button)
-const formEl = document.querySelector('form');
-const inputEl = document.querySelectorAll('input');
-const textAreaEl = document.querySelector('textarea');
-console.log(textAreaEl)
-const btn = document.querySelector('button');
+// clearing formspree form
+// tutorial: https://help.formspree.io/hc/en-us/articles/1500009404742-How-to-clear-a-form-after-submission
+portfolio.clearForm = () => {
 
+    const contactForm = document.querySelector('#contact-form');
+    window.onbeforeunload = () => {
+        contactForm.reset();
+    };
+};
 
-//add event listener to the form element
-btn.addEventListener('click', (event) => {
-    event.preventDefault();
-
-    // const contactInfo = inputEl.value;
-    const message = textAreaEl.value;
-
-        if (message) {
-            alert('Thank you! We have received your message.');
-        } 
-        else {
-            alert('You must include a message!');
-        }
-
-        // clear the input and textarea values back to an empty string
-        inputEl.forEach(input => {
-            input.value = "";
-        })
-        textAreaEl.value = "";
+// scroll to top button
+// tutorial: https://www.youtube.com/watch?v=FK5DEa1Hvco
+portfolio.scrollToTop = () => {
+    const scrollButton = document.createElement('button');
+    scrollButton.id = 'to-top'
+    scrollButton.innerHTML = '<i class="material-icons">arrow_upward</i>'
+    document.body.appendChild(scrollButton);
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            scrollButton.classList.add('active');
+        } else {
+            scrollButton.classList.remove('active');
+        };
     });
+
+    scrollButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    });
+};
+
+portfolio.clearForm();
+portfolio.scrollToTop();
+AOS.init();

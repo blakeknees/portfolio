@@ -121,3 +121,28 @@ h4 {
 // nav: 29px;
 // body text: 20px;
 
+#to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid variables.$accent;
+    font-size: 25px;
+    color: variables.$accent;
+    background-color: variables.$button;
+    text-decoration: none;
+    display: none;
+
+    span {
+        font-size: 3rem;
+    }
+}
+
+#to-top.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
