@@ -37,4 +37,4 @@ portfolio.scrollToTop = () => {
 
 portfolio.clearForm();
 portfolio.scrollToTop();
-AOS.init();
+

@@ -15,7 +15,7 @@
 .about .about-container .about-flex img.rounded {
   height: 350px;
   width: 350px;
-  border-radius: 20%;
+  border-radius: 30px;
   -o-object-fit: fill;
      object-fit: fill;
   border: 5px solid #8fbdbd;
@@ -173,7 +173,7 @@ input:checked ~ span:nth-last-child(2) {
 }
 .contact .form .submit-message {
   border: 5px solid #f9c2cb;
-  border-radius: 3%;
+  border-radius: 30px;
 }
 .contact .form .submit-message p {
   color: #2c4553;
@@ -355,8 +355,8 @@ h4 {
   text-decoration: none;
   display: none;
 }
-#to-top span {
-  font-size: 3rem;
+#to-top i {
+  font-size: 1.75rem;
 }
 
 #to-top.active {
@@ -373,7 +373,11 @@ h4 {
 
 header {
   background-color: #8b8bae;
-  height: 65vh;
+  background-image: url("/assets/cannabis-background.jpg");
+  opacity: 0.6;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
+          box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
+  height: 90vh;
 }
 header .hamburger {
   display: none;
@@ -400,11 +404,11 @@ header .nav-bar-flex ul li {
   margin-right: 2.5rem;
 }
 header .nav-bar-flex ul li a {
-  color: #374b4a;
-  text-decoration: none;
+  color: #1f4f4d;
+  font-weight: 600;
 }
 header .nav-bar-flex ul li a:hover {
-  font-weight: 600;
+  border-bottom: 2px solid #1f4f4d;
 }
 header .header-text-flex {
   display: -webkit-box;
@@ -420,9 +424,11 @@ header .header-text-flex {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 4rem;
 }
 header .header-text-flex h1 {
   color: #dfe2cf;
+  text-shadow: 2px 2px 2px #7e5a9b;
 }
 header .header-text-flex h1, header .header-text-flex p {
   text-align: center;
@@ -436,6 +442,7 @@ header .header-text-flex p {
 header .header-text-flex button {
   font-family: "Sintony";
   margin-top: 2rem;
+  border-radius: 10px;
 }
 header .header-text-flex button a {
   color: #dfe2cf;
@@ -451,7 +458,7 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
 @media (max-width: 1601px) {
   /* HEADER */
   header {
-    height: 70vh;
+    height: 90vh;
   }
   header button {
     margin-top: 1.5rem;
@@ -478,14 +485,11 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
     width: 60%;
   }
   /* HEADER & NAV */
-  header {
-    height: 70vh;
-  }
   header button {
     margin-top: 1.5rem;
   }
   /* END header */
-  /* ABOUT */
+  /* MAIN */
   main {
     /* SKILLS */
     /* PROJECT */
@@ -530,6 +534,12 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
   }
   /* END main */
 }
+@media (max-width: 1315px) {
+  /* MAIN */
+  main .projects .project-box h3 {
+    margin: 0.5rem;
+  }
+}
 /* TABLET */
 @media (max-width: 1100px) {
   /* MAIN */
@@ -554,7 +564,7 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
 }
 @media (max-width: 1096px) {
   header {
-    height: 75vh;
+    height: 95vh;
   }
   main .about .about-container .about-flex {
     -webkit-box-orient: vertical;
@@ -586,8 +596,11 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
     text-align: center;
   }
 }
-@media (max-width: 951px) {
+@media (max-width: 963px) {
   /* MAIN */
+  main .projects button {
+    font-size: 0.75rem;
+  }
   main .contact .form .submit-message button {
     margin-left: 7rem;
   }
@@ -770,25 +783,36 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
       flex-basis: 46%;
   width: 25rem;
   margin: 1rem;
+  border-radius: 15px;
 }
 .projects .project-box h3, .projects .project-box p {
   color: #374b4a;
+  text-align: center;
+}
+.projects .project-box h3 {
+  margin: 1rem 0 1rem 0;
 }
 .projects .project-box h4 {
   color: #374b4a;
+  text-align: center;
+}
+.projects .project-box a {
+  font-weight: bold;
+  color: #1f4f4d;
 }
 .projects .project-box img {
   height: 200px;
   width: 800px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 .projects .project-box .project-content {
   display: flex-column;
-  margin: 1rem;
-}
-.projects .project-box .project-content h3, .projects .project-box .project-content h4, .projects .project-box .project-content p {
-  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem;
 }
 .projects .project-box .project-content h4 {
   font-size: 0.75rem;
@@ -798,9 +822,9 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
 }
 .projects .project-box .project-content .button-box {
   margin-top: 1rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projects .project-box .project-content .button-box button {
   width: 30%;

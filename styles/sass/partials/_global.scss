@@ -134,10 +134,11 @@ h4 {
     background-color: variables.$button;
     text-decoration: none;
     display: none;
-
-    span {
-        font-size: 3rem;
+    
+    i {
+        font-size: 1.75rem;
     }
+    
 }
 
 #to-top.active {

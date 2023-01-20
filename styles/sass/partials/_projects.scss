@@ -1,7 +1,7 @@
 @use "./variables";
 
 .projects {
-    background-color: variables.$projects;   
+    background-color: variables.$projects;
 
     h2 {
         color: variables.$h2blue;
@@ -21,27 +21,38 @@
             flex-basis: 46%;
             width: 25rem;
             margin: 1rem;
+            border-radius: 15px;
 
             h3, p {
                 color: variables.$body;
+                text-align: center;
             }
+
+            h3 {
+                margin: 1rem 0 1rem 0;
+            }
+
             h4 {
                 color: variables.$nav-links;
+                text-align: center;
+            }
+
+            a {
+                font-weight: bold;
+                color: variables.$nav-links2
             }
 
             img {
                 height: 200px;
                 width: 800px;
                 object-fit: cover;
+                border-radius: 15px 15px 0 0;
             }
 
             .project-content {
                 display: flex-column;
-                margin: 1rem;
-                
-                h3, h4, p {
-                    text-align: left;
-                }
+                justify-content: space-between;
+                margin: .5rem;
 
                 h4 {
                     font-size: .75rem;
@@ -52,7 +63,8 @@
                 }
                 .button-box {
                     margin-top: 1rem;
-                    justify-content: flex-start;
+                    justify-content: center;
+                    // align-items: baseline;
 
                     button {
                         width: 30%;

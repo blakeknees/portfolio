@@ -2,7 +2,10 @@
 
 header {
     background-color: variables.$header;
-    height: 65vh;
+    background-image: url('/assets/cannabis-background.jpg');
+    opacity: 0.6;
+    box-shadow: inset 0 0 0 1000px rgba(139,139,174, 0.85);
+    height: 90vh;
 
     .hamburger {
         display: none;
@@ -24,11 +27,12 @@ header {
             }
             
             li a {
-                color: variables.$nav-links; 
-                text-decoration: none;
+                color: variables.$nav-links2; 
+                font-weight: 600;
 
                 &:hover {
-                    font-weight: 600;
+                    border-bottom: 2px solid variables.$nav-links2;
+
                 }
             }
         }
@@ -39,9 +43,11 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 4rem;
   
         h1 {
             color: variables.$h1;
+            text-shadow: 2px 2px 2px variables.$h2purple;
         }
         h1, p {
             text-align: center;
@@ -55,6 +61,7 @@ header {
         button {
             font-family: variables.$body-font;
             margin-top: 2rem;
+            border-radius: 10px;
 
             a {
                 color: variables.$h1;

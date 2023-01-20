@@ -8,6 +8,8 @@
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/styles.css">
     <link href="dist/hamburgers.css" rel="stylesheet">
+
+    <!-- DEV ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
     <!-- FONTS -->
@@ -15,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
     
-    <!-- ANIMATE ON SCROLL -->
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     
     <!-- SCROLL TO TOP ICONS -->
@@ -29,7 +31,7 @@
     <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
 
 </head>
-<body>
+<body data-aos="fade-down" data-aos-duration="5000">
     <!-- Skip Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -77,7 +79,7 @@
             <div class="header-text-flex">
                     <h1>Jennifer Blakney</h1>
                     <p>Front-End Web Developer</p>
-                    <button><a href="#contact-form">Get in Touch</a>
+                    <button><a href="#contact-jump">Get in Touch</a>
                     </button>
             </div> <!-- END .flex-->
 
@@ -88,7 +90,7 @@
         <!-- ABOUT -->
         <section class="about" id="about">
             <div class="wrapper">
-                <div class="about-container">
+                <div class="about-container" data-aos="fade-up" data-aos-duration="5000">
                     <h2>About Me</h2>
                     <div class="about-flex">
                         <img src="./assets/pfp2022.jpg" alt="Picture of Jennifer smiling at the camera while sitting in her backyard." class="rounded">
@@ -113,13 +115,12 @@
                     </div>
                 </div> <!-- END .about-container-->
             </div> <!-- END .flex .wrapper -->
-
         </section> 
         <!-- END ABOUT-->
 
         <!-- SKILLS -->
         <section class="skills" id="skills">
-            <div class="skills-container flex-column wrapper">
+            <div class="skills-container flex-column wrapper" class="about-container" data-aos="fade-up" data-aos-duration="5000">
                 <h2>Skills</h2>
                 <ul>
                     <li>
@@ -161,21 +162,21 @@
 
         <!-- PROJECTS -->
         <section class="projects" id="projects">
-
-            <div class="flex-column wrapper">
+            <div class="flex-column wrapper" class="about-container" data-aos="fade-up" data-aos-duration="5000">
                 
                 <h2>Projects</h2>
 
                 <div class="flex project-container">
 
-                    <div class="project-box">
+                    <div class="project-box" data-aos="fade-down-right" data-aos-duration="5000">
                         <div class="project-pic"><img src="./assets/boat-ride-adventures.png" alt="Screenshot of Boat Ride Adventures Header">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
-                            <h3>Project 1: Boat Ride Adventures</h3>
+                            <h3>Project 1:</h3>
+                            <h3>Boat Ride Adventures</h3>
                             <h4>HTML, CSS, JAVASCRIPT</h4>
-                            <p>First bootcamp project was to build a multi-page website based on <em>these images</em>. For a stretch goal I used JavaScript to add functionality on the form of the Contact page.</p>
+                            <p>First bootcamp project was to build a multi-page website based on <em>these images</em>. I used JavaScript to add functionality on the form of the Contact page.</p>
                             </div>
 
                             <div class="button-box flex">
@@ -186,14 +187,15 @@
                         </div>
                     </div> <!-- END .project-box-->
 
-                    <div class="project-box">
+                    <div class="project-box" data-aos="fade-down-left" data-aos-duration="5000">
                         <div class="project-pic"><img src="./assets/brewery-finder.png" alt="Screenshot of Brewery Finder App">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
-                                <h3>Project 2: Brewery Finder</h3>
+                                <h3>Project 2:</h3>
+                                <h3>Brewery Finder</h3>
                                 <h4>HTML, CSS, JAVASCRIPT, API</h4>
-                                <p>Using a public brewery API, this paired project displayed brewery selections based on city and type.</p>
+                                <p>Using a public brewery API, this paired project displayed brewery selections based on city and type. Included some thematic animations and graphics.</p>
                             </div>
                     
                             <div class="button-box flex">
@@ -204,14 +206,15 @@
                         </div>
                     </div> <!-- END .project-box-->
                     
-                    <div class="project-box">
+                    <div class="project-box" data-aos="fade-up-right" data-aos-duration="5000">
                         <div class="project-pic"><img src="./assets/project-3.png" alt="Screenshot of Boat Ride Adventures Contact Page and Form">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
-                                <h3>Project 3: Dispensary Shopping</h3>
+                                <h3>Project 3:</h3>
+                                <h3>Dispensary Shopping</h3>
                                 <h4>REACT JS</h4>
-                                <p>My first React project features my own dataset of products where the user can add/remove items from their cart.</p>
+                                <p>My first React project features my own dataset of actual products found at the <a href="https://ocs.ca">Ontario Cannabis Store</a>. Functionality includes adding/removing items from the cart.</p>
                             </div>
                     
                             <div class="button-box flex">
@@ -222,14 +225,15 @@
                         </div>
                     </div> <!-- END .project-box-->
 
-                    <div class="project-box">
+                    <div class="project-box" data-aos="fade-up-left" data-aos-duration="5000">
                         <div class="project-pic"><img src="./assets/project-4.png" alt="Placeholder Bear, isn't it cute??">
                         </div>
                         <div class="project-content">
                             <div class="flex-column">
-                                <h3>Project 4: Movie Spoiler Gif Generator</h3>
+                                <h3>Project 4:</h3>
+                                <h3>Movie Spoiler Gif Generator</h3>
                                 <h4>REACT JS, API, Firebase, Firestore</h4>
-                                <p>In this group project we created an app where the user can search a movie title and receive gifs based on keywords associated with that title. Users can also save/remove gifs and do extended searches.</p>
+                                <p>In this group React project, users can search a movie title and see gifs based on keywords associated with that title. They can also save/remove gifs.</p>
                             </div>
                     
                             <div class="button-box flex">
@@ -243,9 +247,8 @@
         </section> <!-- END PROJECTS -->
 
         <!-- CONTACT -->
-        
         <section class="contact" id="contact">
-            <div class="flex-column wrapper">
+            <div class="flex-column wrapper" class="about-container" data-aos="fade-up" data-aos-duration="5000">
                
                 <h2>Contact</h2>
 
@@ -268,11 +271,11 @@
                     </a>
                      
                 </ul>
-                <p>I'm always open to new opportunities, or just chatting about projects and code!</p>
+                <p id="contact-jump">I'm always open to new opportunities, or just chatting about projects and code!</p>
 
                 <p>Complete the form below to get in touch.</p>
 
-                <div class="form">
+                <div class="form" class="about-container" data-aos="fade-up" data-aos-duration="5000">
 
                     <form action="https://formspree.io/f/mzbqzevk" method="POST" class="submit-message" id="contact-form">
                         <p>Please fill out <em>all</em> of the information:</p>
@@ -294,9 +297,7 @@
                         <!-- your other form fields go here -->
                         <button type="submit" class="submit-button">Submit</button>
                     </form>
-                
                 </div> <!-- END .form -->
-
         </section> <!-- END CONTACT -->
     </main>
 
@@ -314,6 +315,10 @@
     </footer>
 
 <script src="./script.js"></script>  
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script> 
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
