@@ -449,6 +449,7 @@
 }
 
 @media (max-width: 451px) {
+
     main {
         .projects {
             .wrapper {
@@ -463,5 +464,10 @@
                 }
             }
         }
+    }
+    #to-top {
+        width: 40px;
+        height: 40px;
+        right: 60px;
     }
 }

@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- METADATA -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jennifer Blakney's Portfolio</title>
+    
+    <!-- TITLE & FAVICONS -->
+    <title>Jennifer Blakney | Front-End Web Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
+
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/styles.css">
     <link href="dist/hamburgers.css" rel="stylesheet">
 
-    <!-- DEV ICONS -->
+    <!-- IMPORTED ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +33,6 @@
     <!-- SCROLL TO TOP ICONS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aarrow_upward%3A" />
-    
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon_io/site.webmanifest">
 
 </head>
 <body data-aos="fade-down" data-aos-duration="5000">
@@ -79,8 +83,13 @@
             <div class="header-text-flex">
                     <h1>Jennifer Blakney</h1>
                     <p>Front-End Web Developer</p>
-                    <button><a href="#contact-jump">Get in Touch</a>
-                    </button>
+
+                    <!-- scroll down icon -->
+                    <div class="scroll-down">
+                        <i class="fa fa-angle-double-down" tabindex="0" onKeyDown="portfolio.scrollDownOnFocus(event)"></i>
+                    </div>
+                    <!-- <button><a href="#contact-jump">Get in Touch</a>
+                    </button> -->
             </div> <!-- END .flex-->
 
         </div> <!-- END .flex .wrapper -->

@@ -13,20 +13,20 @@ portfolio.clearForm = () => {
 // scroll to top button
 // tutorial: https://www.youtube.com/watch?v=FK5DEa1Hvco
 portfolio.scrollToTop = () => {
-    const scrollButton = document.createElement('button');
-    scrollButton.id = 'to-top'
-    scrollButton.innerHTML = '<i class="material-icons">arrow_upward</i>'
-    document.body.appendChild(scrollButton);
+    const scrollUpButton = document.createElement('button');
+    scrollUpButton.id = 'to-top'
+    scrollUpButton.innerHTML = '<i class="material-icons">arrow_upward</i>'
+    document.body.appendChild(scrollUpButton);
     
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            scrollButton.classList.add('active');
+            scrollUpButton.classList.add('active');
         } else {
-            scrollButton.classList.remove('active');
+            scrollUpButton.classList.remove('active');
         };
     });
 
-    scrollButton.addEventListener('click', () => {
+    scrollUpButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
             left: 0,
@@ -35,6 +35,41 @@ portfolio.scrollToTop = () => {
     });
 };
 
+
+// scroll down function
+portfolio.scrollDown = () => {
+    const scrollDownButton = document.querySelector('.scroll-down');
+    const aboutSection = document.querySelector('#about');
+    let aboutTop = aboutSection.offsetTop;
+
+    // smoothly scroll down to top of about section
+    scrollDownButton.addEventListener('click', () => {
+            window.scrollTo({
+            top: aboutTop,
+            behavior: `smooth`,
+        });
+    })
+}
+
+
+// portfolio.scrollDownOnFocus = (event) => {
+//     const keyCode = event.keyCode;
+//     const enterKeyCode = 13; 
+
+//     // if a key is pressed but it is not enter then behave normally
+//     if (keyCode && keyCode !== enterKeyCode) {
+//         return;
+
+//     // if a key is pressed and it is enter scroll down
+//     } else {
+//         portfolio.scrollDown();
+//     }
+// }
+
+
 portfolio.clearForm();
 portfolio.scrollToTop();
+portfolio.scrollDown();
+// portfolio.scrollDownOnFocus();
+
 

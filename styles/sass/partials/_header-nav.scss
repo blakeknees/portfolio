@@ -58,24 +58,39 @@ header {
             font-weight: 600;
             letter-spacing: 1mm;
         }
-        button {
-            font-family: variables.$body-font;
-            margin-top: 2rem;
-            border-radius: 10px;
 
-            a {
-                color: variables.$h1;
-                &:hover, &:focus {
-                    color: variables.$h2blue;
-                }
+        // scroll down button styles
+        .scroll-down {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            font-size: 60px;
+            animation: 3s infinite ease-in-out pulse;
+            &:hover {
+                cursor: pointer;
+                color: rgba(variables.$nav-links2, 0.8);
+                transition: 0.4s;
             }
-
-            &:hover, &:focus {
-                background-color: variables.$contact-border;
-                border: 2px solid variables.$contact-border;
-            }
-
         }
+        
+        // button {
+        //     font-family: variables.$body-font;
+        //     margin-top: 2rem;
+        //     border-radius: 10px;
+
+        //     a {
+        //         color: variables.$h1;
+        //         &:hover, &:focus {
+        //             color: variables.$h2blue;
+        //         }
+        //     }
+
+        //     &:hover, &:focus {
+        //         background-color: variables.$contact-border;
+        //         border: 2px solid variables.$contact-border;
+        //     }
+
+        // }
     }
 
 }

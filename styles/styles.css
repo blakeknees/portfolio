@@ -439,20 +439,19 @@ header .header-text-flex p {
   font-weight: 600;
   letter-spacing: 1mm;
 }
-header .header-text-flex button {
-  font-family: "Sintony";
-  margin-top: 2rem;
-  border-radius: 10px;
+header .header-text-flex .scroll-down {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  font-size: 60px;
+  -webkit-animation: 3s infinite ease-in-out pulse;
+          animation: 3s infinite ease-in-out pulse;
 }
-header .header-text-flex button a {
-  color: #dfe2cf;
-}
-header .header-text-flex button a:hover, header .header-text-flex button a:focus {
-  color: #395c78;
-}
-header .header-text-flex button:hover, header .header-text-flex button:focus {
-  background-color: #f9c2cb;
-  border: 2px solid #f9c2cb;
+header .header-text-flex .scroll-down:hover {
+  cursor: pointer;
+  color: rgba(31, 79, 77, 0.8);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media (max-width: 1601px) {
@@ -758,6 +757,11 @@ header .header-text-flex button:hover, header .header-text-flex button:focus {
   }
   main .projects .project-container .project-box {
     width: 16rem;
+  }
+  #to-top {
+    width: 40px;
+    height: 40px;
+    right: 60px;
   }
 }
 .projects {
