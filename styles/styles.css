@@ -761,7 +761,7 @@ header .header-text-flex .scroll-down:hover {
   #to-top {
     width: 40px;
     height: 40px;
-    right: 60px;
+    right: 10px;
   }
 }
 .projects {
