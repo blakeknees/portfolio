@@ -1,6 +1,7 @@
 @use "./variables";
 
 .projects {
+    overflow: hidden;
     background-color: variables.$projects;
 
     h2 {

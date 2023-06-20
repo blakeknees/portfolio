@@ -7,7 +7,7 @@
 
         nav {
             .nav-bar-flex {
-                gap: 30%;
+                // gap: 30%;
             }
     
             button {
@@ -259,7 +259,7 @@
     header {
         nav {
             .nav-bar-flex {
-                gap: 20%;
+                // gap: 20%;
             }
         }
     }
@@ -284,10 +284,6 @@
     header {
         nav {
             justify-content: flex-start;
-            
-            li {
-                margin: 5rem;
-            }
 
             .nav-bar-flex {
                 position: fixed;
@@ -302,6 +298,11 @@
                 text-align: center;
                 transition: 0.6s;
                 margin-top: 0;
+
+                li {
+                        margin: 3rem;
+                        padding: 10px;
+                }
             }
 
             .nav-bar-flex.active {
@@ -311,6 +312,7 @@
             
             .hamburger {
                 display: block;
+                position: fixed;
                 padding-bottom: 3rem;
                 margin-left: 1rem;
             }
@@ -447,6 +449,8 @@
 }
 
 @media (max-width: 651px) {
+    /* NAV */
+
     #to-top {
         width: 40px;
         height: 40px;
@@ -508,9 +512,33 @@
 }
 
 @media (max-width: 451px) {
-    
+    /* NAV */
+    .header-text-flex {
+        width: 80%;
+        margin-top: 5rem;
 
+        p {
+            font-size: 1rem;
+        }
+
+        .scroll-down {
+            margin-top: 9%;
+        }
+    }
+
+    /* MAIN */
     main {
+        .about {
+            .about-container {
+                .about-flex {
+                    img.rounded {
+                        object-fit: cover;
+                    }
+
+                }
+
+            }
+        }
         .projects {
             .wrapper {
                 width: 90%;
@@ -522,6 +550,13 @@
                     width: 16rem;
                     // margin-left: .65rem;
                 }
+            }
+        }
+
+        .contact {
+            .submit-message {
+                display: flex;
+                flex-direction: column;
             }
         }
     }

@@ -13,19 +13,20 @@ header {
         
         .nav-bar-flex {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
+            align-items: center;
             margin-top: 10px;
-            gap: 50%;
             
                 li {
-                    font-size: 1rem;
-                    padding: 20px;
-                    margin-top: 1rem; 
+                    font-size: 1.25rem;
+                    padding: 50px;
                 }
     
                 li a {
                     color: variables.$nav-links2;
-                    font-weight: 600;
+                    font-weight: 800;
+                    letter-spacing: .75mm;
+                    text-shadow: 1px 1px 1px variables.$nav-links;
     
                     &:hover {
                         border-bottom: 2px solid variables.$nav-links2;
@@ -40,7 +41,7 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
 
         h1 {
             color: variables.$h1;
@@ -53,17 +54,24 @@ header {
         }
 
         p {
+            font-size: 1.5rem;
+            margin-top: 3rem;
             color: variables.$accent;
             font-style: italic;
-            font-weight: 600;
+            font-weight: 800;
             letter-spacing: 1mm;
+            text-shadow: 2px 2px 2px variables.$h2purple;
         }
 
         // scroll down button styles
         .scroll-down {
-            position: absolute;
-            bottom: 10%;
-            left: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 18%;
+            // position: absolute;
+            // bottom: 10%;
+            // left: 50%;
             font-size: 60px;
             animation: 3s infinite ease-in-out pulse;
 
