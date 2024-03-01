@@ -11,6 +11,10 @@
             color: variables.$h2green;
             margin-bottom: 2rem;
         }
+
+        h3 {
+            color: #4d5e58;
+        }
         
         ul {
             display: flex;
@@ -24,31 +28,14 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 25%;
-                min-width: 125px;
-                padding: 25px;
+                width: 10%;
+                min-width: 10px;
+                padding: 5px;
     
                 i {
-                    font-size: 4rem;
+                    font-size: 2rem;
                     color: #f9fbf2;
                     padding-bottom: .5rem;
-
-                    &:hover {
-                        font-size: 4.5rem;
-                        transition: 0.4s;
-                        transform: scale(1.2);
-                        color: #adb88a;
-                    }
-                }
-            
-                p {
-                    color: #f9fbf2;
-                    display: block;
-                    font-family: sans-serif;
-                    text-transform: uppercase;
-                    font-size: .75rem;
-                    margin: .5rem;
-                    text-align: justify;
                 }
             }
         }
