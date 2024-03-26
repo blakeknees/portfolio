@@ -12,10 +12,9 @@
   display: flex;
   padding-bottom: 3rem;
 }
-.about .about-container .about-flex img.rounded {
+.about .about-container .about-flex img {
   height: 350px;
   width: 350px;
-  border-radius: 30px;
   -o-object-fit: fill;
      object-fit: fill;
   border: 5px solid #8fbdbd;
@@ -58,7 +57,7 @@
 }
 .contact p {
   color: #2c4553;
-  padding-bottom: 1rem;
+  padding: 0 100px 20px 100px;
 }
 .contact ul {
   margin: auto;
@@ -147,7 +146,6 @@ h3,
 h4 {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
-  text-transform: uppercase;
 }
 
 img {
@@ -244,7 +242,6 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  letter-spacing: 0.75mm;
 }
 
 h3 {
@@ -753,17 +750,18 @@ header nav .nav-bar-flex li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 .projects .project-box {
   background-color: #c5a3d0;
-  height: 30rem;
   -ms-flex-preferred-size: 46%;
       flex-basis: 46%;
-  width: 25rem;
+  width: 20rem;
   margin: 1rem;
-  border-radius: 15px;
 }
 .projects .project-box h3, .projects .project-box p {
   color: #374b4a;
@@ -775,17 +773,14 @@ header nav .nav-bar-flex li a:hover {
 .projects .project-box h4 {
   color: #374b4a;
   text-align: center;
+  margin: 0;
+}
+.projects .project-box p {
+  padding: 0 50px;
 }
 .projects .project-box a {
   font-weight: bold;
   color: #1f4f4d;
-}
-.projects .project-box img {
-  height: 200px;
-  width: 800px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0 0;
 }
 .projects .project-box .project-content {
   display: flex-column;
@@ -1100,41 +1095,62 @@ html {
   color: #3c504a;
   margin-bottom: 2rem;
 }
-.skills .skills-container h3 {
+.skills .skills-container .tech-stack {
+  border: 4px solid #d9dbb1;
+  padding: 15px;
+}
+.skills .skills-container .tech-stack h3 {
   color: #4d5e58;
 }
-.skills .skills-container ul {
+.skills .skills-container .tech-stack ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 75%;
+  width: 60%;
   margin: auto;
   padding: 0;
 }
-.skills .skills-container ul li {
+.skills .skills-container .tech-stack ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 10%;
   min-width: 10px;
   padding: 5px;
 }
-.skills .skills-container ul li i {
+.skills .skills-container .tech-stack ul li i {
   font-size: 2rem;
   color: #f9fbf2;
   padding-bottom: 0.5rem;
+}
+.skills .skills-container .services {
+  border: 4px solid #d9dbb1;
+  padding: 20px 70px 70px 50px;
+  margin-top: 40px;
+}
+.skills .skills-container .services p {
+  padding: 20px;
+  color: #f8f6f6;
+}
+.skills .skills-container .services .service-details {
+  border: 4px solid #d9dbb1;
+  padding: 0 30px 0 30px;
+  margin-top: 20px;
+}
+.skills .skills-container .services .service-details h3 {
+  color: #4d5e58;
+}
+.skills .skills-container .services .service-details span {
+  font-style: italic;
+}
+.skills .skills-container .services .service-details p {
+  padding: 0 90px 20px 90px;
 }
 
 @font-face {

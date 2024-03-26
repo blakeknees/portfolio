@@ -15,10 +15,9 @@
             display: flex;
             padding-bottom: 3rem;
             
-            img.rounded {
+            img {
                 height: 350px;
                 width: 350px;
-                border-radius: 30px;
                 object-fit: fill;
                 border: 5px solid variables.$img-border;
                 margin-right: 4rem;
