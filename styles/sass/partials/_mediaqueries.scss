@@ -318,6 +318,18 @@
             }
         }
 
+        .skills {
+            .skills-container {
+                .services {
+                    .service-details{
+                        p {
+                            padding: 0 1rem; 
+                        }
+                    }
+                }
+            }
+        }
+
         .projects {
             .wrapper {
                 width: 90%;
@@ -340,7 +352,7 @@
         .skills-container {
             .tech-stack {
                 ul {
-                    
+
                 }
             }
         }
@@ -359,6 +371,16 @@
 
 @media (max-width: 591px) {
     main {
+        .skills {
+                .skills-container {
+                    .services {
+                        .service-details {
+                            padding: 0 10px 0 10px;
+                        }
+                    }
+                }
+        }
+
         .projects {
             .wrapper {
                 width: 80%;
