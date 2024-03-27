@@ -6,10 +6,6 @@
         height: 90vh;
 
         nav {
-            .nav-bar-flex {
-                // gap: 30%;
-            }
-    
             button {
                 margin-top: 1.5rem;
             }
@@ -113,17 +109,6 @@
             h2 {
                 margin-top: 5rem;
             }
-            .form {
-                margin-bottom: 3rem;
-            
-                .submit-message {
-                    border: 5px solid pink;
-        
-                    input, textarea {
-                        border: 2px solid lavender;
-                    }
-                }
-            }
         } 
     } /* END main */
 }
@@ -155,25 +140,6 @@
                 }
             }
         }
-
-        .contact {
-            .form {
-                .submit-message {
-                    input {
-                        margin-left: 1rem;
-                    }
-                    input[type=email]{
-                        margin-left: 3rem;
-                    }
-                    textarea {
-                        margin-left: 1.5rem;
-                    }
-                    button {
-                        margin-left: 8.5rem;
-                    }
-                }
-            }
-        }
     }
     footer {
         .footer-container {
@@ -196,7 +162,7 @@
                 .about-flex {
                     flex-direction: column;
                     
-                    img.rounded {
+                    img {
                         margin: auto;
                         height: 400px;
                         width: 300px;
@@ -205,6 +171,16 @@
 
                     p {
                         text-align: center;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            .skills-container {
+                .tech-stack {
+                    ul {
+                        width: 100%;
                     }
                 }
             }
@@ -241,28 +217,10 @@
                 font-size: .75rem;
             }
         }
-
-        .contact {
-            .form {
-                .submit-message {
-                    button {
-                        margin-left: 7rem;
-                    }
-                }
-            }
-
-        }
     }
 }
 
 @media (max-width: 901px) {
-    header {
-        nav {
-            .nav-bar-flex {
-                // gap: 20%;
-            }
-        }
-    }
     main {
         .projects {
             .project-container {
@@ -360,19 +318,6 @@
             }
         }
 
-        .skills {
-            .skills-container {
-               li {
-                flex-basis: 50%;
-
-                span {
-                    padding-top: 1rem;
-                }
-               }
-                   
-            }
-        }
-
         .projects {
             .wrapper {
                 width: 90%;
@@ -387,65 +332,10 @@
                 }
             }
         }
-
-        .contact {
-            .wrapper {
-                width: 90%;
-            }
-            .form {
-                .submit-message {
-                    width: 100%;
-
-                    input {
-                        margin-left: 1.1rem;
-                        font-size: 80%;
-                    }
-                    input[type=email] {
-                        margin-left: 3rem;
-                    }
-                    textarea {
-                        font-size: 80%;
-                        margin-left: 1.75rem;
-                    }
-
-                    button {
-                        margin-left: 9rem;
-                    }
-                }
-
-            }
-        }
     }
 }
 
 @media (max-width: 701px) {
-    /* MAIN */
-    main {
-        .contact {
-            .wrapper {
-                width: 85%;
-            }
-            .submit-message {
-                input {
-                    margin: 0;
-                    font-size: 40%;
-                }
-                
-                input[type=email] {
-                    margin-left: 3rem;
-                }
-                
-                textarea {
-                    font-size: 50%;
-                    margin-left: 1.75rem;
-                }
-                
-                button {
-                    margin-left: 9rem;
-                }
-            }
-        }
-    }
 }
 
 @media (max-width: 651px) {
@@ -455,22 +345,6 @@
         width: 40px;
         height: 40px;
         right: 10px;
-    }
-    
-    /* MAIN */
-    main {
-        .contact {
-            .form {
-                .submit-message {
-                    display: flex;
-                    flex-direction: column;
-
-                    input {
-                        margin-left: 4rem;
-                    }
-                }
-            }
-        }
     }
 }
 
@@ -484,16 +358,6 @@
                 .project-box {
                     width: 20rem;
                     height: 30rem;
-                }
-            }
-        }
-
-        .contact {
-            .form {
-                .submit-message {
-                    button {
-                        margin-left: 6rem;
-                    }
                 }
             }
         }
@@ -546,13 +410,6 @@
                     width: 16rem;
                     // margin-left: .65rem;
                 }
-            }
-        }
-
-        .contact {
-            .submit-message {
-                display: flex;
-                flex-direction: column;
             }
         }
     }

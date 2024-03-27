@@ -426,15 +426,6 @@ header nav .nav-bar-flex li a:hover {
   main .contact h2 {
     margin-top: 5rem;
   }
-  main .contact .form {
-    margin-bottom: 3rem;
-  }
-  main .contact .form .submit-message {
-    border: 5px solid pink;
-  }
-  main .contact .form .submit-message input, main .contact .form .submit-message textarea {
-    border: 2px solid lavender;
-  }
   /* END main */
 }
 @media (max-width: 1315px) {
@@ -448,18 +439,6 @@ header nav .nav-bar-flex li a:hover {
   /* MAIN */
   main .projects .project-container .project-box h3 {
     font-size: 1rem;
-  }
-  main .contact .form .submit-message input {
-    margin-left: 1rem;
-  }
-  main .contact .form .submit-message input[type=email] {
-    margin-left: 3rem;
-  }
-  main .contact .form .submit-message textarea {
-    margin-left: 1.5rem;
-  }
-  main .contact .form .submit-message button {
-    margin-left: 8.5rem;
   }
   footer .footer-container button {
     width: 40%;
@@ -475,7 +454,7 @@ header nav .nav-bar-flex li a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  main .about .about-container .about-flex img.rounded {
+  main .about .about-container .about-flex img {
     margin: auto;
     height: 400px;
     width: 300px;
@@ -483,6 +462,9 @@ header nav .nav-bar-flex li a:hover {
   }
   main .about .about-container .about-flex p {
     text-align: center;
+  }
+  main .skills .skills-container .tech-stack ul {
+    width: 100%;
   }
   main .projects .project-container .project-box {
     height: 27rem;
@@ -503,9 +485,6 @@ header nav .nav-bar-flex li a:hover {
   /* MAIN */
   main .projects button {
     font-size: 0.75rem;
-  }
-  main .contact .form .submit-message button {
-    margin-left: 7rem;
   }
 }
 @media (max-width: 901px) {
@@ -600,13 +579,6 @@ header nav .nav-bar-flex li a:hover {
   main .about .about-container .about-flex p {
     text-align: center;
   }
-  main .skills .skills-container li {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  main .skills .skills-container li span {
-    padding-top: 1rem;
-  }
   main .projects .wrapper {
     width: 90%;
   }
@@ -620,46 +592,6 @@ header nav .nav-bar-flex li a:hover {
         flex-basis: 70%;
     width: 25rem;
   }
-  main .contact .wrapper {
-    width: 90%;
-  }
-  main .contact .form .submit-message {
-    width: 100%;
-  }
-  main .contact .form .submit-message input {
-    margin-left: 1.1rem;
-    font-size: 80%;
-  }
-  main .contact .form .submit-message input[type=email] {
-    margin-left: 3rem;
-  }
-  main .contact .form .submit-message textarea {
-    font-size: 80%;
-    margin-left: 1.75rem;
-  }
-  main .contact .form .submit-message button {
-    margin-left: 9rem;
-  }
-}
-@media (max-width: 701px) {
-  /* MAIN */
-  main .contact .wrapper {
-    width: 85%;
-  }
-  main .contact .submit-message input {
-    margin: 0;
-    font-size: 40%;
-  }
-  main .contact .submit-message input[type=email] {
-    margin-left: 3rem;
-  }
-  main .contact .submit-message textarea {
-    font-size: 50%;
-    margin-left: 1.75rem;
-  }
-  main .contact .submit-message button {
-    margin-left: 9rem;
-  }
 }
 @media (max-width: 651px) {
   /* NAV */
@@ -667,19 +599,6 @@ header nav .nav-bar-flex li a:hover {
     width: 40px;
     height: 40px;
     right: 10px;
-  }
-  /* MAIN */
-  main .contact .form .submit-message {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main .contact .form .submit-message input {
-    margin-left: 4rem;
   }
 }
 @media (max-width: 591px) {
@@ -689,9 +608,6 @@ header nav .nav-bar-flex li a:hover {
   main .projects .project-container .project-box {
     width: 20rem;
     height: 30rem;
-  }
-  main .contact .form .submit-message button {
-    margin-left: 6rem;
   }
   footer .footer-container p {
     font-size: 0.99rem;
@@ -725,15 +641,6 @@ header nav .nav-bar-flex li a:hover {
   }
   main .projects .project-container .project-box {
     width: 16rem;
-  }
-  main .contact .submit-message {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 .projects {
@@ -1120,6 +1027,8 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 10%;
   min-width: 10px;
   padding: 5px;
