@@ -360,9 +360,6 @@ header nav .nav-bar-flex li a:hover {
 
 @media (max-width: 1601px) {
   /* HEADER */
-  header {
-    height: 90vh;
-  }
   header nav button {
     margin-top: 1.5rem;
   }
@@ -445,9 +442,6 @@ header nav .nav-bar-flex li a:hover {
   }
 }
 @media (max-width: 1096px) {
-  header {
-    height: 95vh;
-  }
   main .about .about-container .about-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

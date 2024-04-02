@@ -3,8 +3,6 @@
 @media (max-width: 1601px) {
     /* HEADER */
     header {
-        height: 90vh;
-
         nav {
             button {
                 margin-top: 1.5rem;
@@ -152,10 +150,6 @@
 }
 
 @media (max-width: 1096px) {
-    header {
-        height: 95vh;
-    }
-
     main {
         .about {
             .about-container {
