@@ -1,103 +1,37 @@
 @use "./variables";
 
 header {
-    background-color: variables.$header;
+    background-color: variables.$about;
     background-image: url('/assets/cannabis-background.jpg');
     opacity: 0.6;
     box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
-    height: 100vh;
+    height: 50vh;
     
-    nav {
-        display: flex;
-        justify-content: center;
-        
-        .nav-bar-flex {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 10px;
-            
-                li {
-                    font-size: 1.25rem;
-                    padding: 50px;
-                }
-    
-                li a {
-                    color: variables.$nav-links2;
-                    font-weight: 800;
-                    letter-spacing: .75mm;
-                    text-shadow: 1px 1px 1px variables.$nav-links;
-    
-                    &:hover {
-                        border-bottom: 2px solid variables.$nav-links2;
-                    }
-                }
-            }
-    }
-    }
-
     .header-text-flex {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
-
+        margin-top: 2rem;
+    
         h1 {
             color: variables.$h1;
             text-shadow: 2px 2px 2px variables.$h2purple;
+            margin: 20px 0;
         }
-
+    
         h1,
         p {
             text-align: center;
         }
-
+    
         p {
             font-size: 1.5rem;
-            margin-top: 3rem;
             color: variables.$accent;
             font-style: italic;
             font-weight: 800;
             letter-spacing: 1mm;
             text-shadow: 2px 2px 2px variables.$h2purple;
         }
-
-        // // scroll down button styles
-        // .scroll-down {
-        //     display: flex;
-        //     justify-content: center;
-        //     align-items: center;
-        //     margin-top: 18%;
-        //     // position: absolute;
-        //     // bottom: 10%;
-        //     // left: 50%;
-        //     font-size: 60px;
-        //     animation: 3s infinite ease-in-out pulse;
-
-        //     &:hover {
-        //         cursor: pointer;
-        //         color: rgba(variables.$nav-links2, 0.8);
-        //         transition: 0.4s;
-        //     }
-        // }
-
-        // button {
-        //     font-family: variables.$body-font;
-        //     margin-top: 2rem;
-        //     border-radius: 10px;
-
-        //     a {
-        //         color: variables.$h1;
-        //         &:hover, &:focus {
-        //             color: variables.$h2blue;
-        //         }
-        //     }
-
-        //     &:hover, &:focus {
-        //         background-color: variables.$contact-border;
-        //         border: 2px solid variables.$contact-border;
-        //     }
-
-        // }
     }
+}

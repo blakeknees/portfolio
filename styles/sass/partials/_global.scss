@@ -4,11 +4,15 @@ html {
     font-size: 125%;
 }
 
-h1,
+h1 {
+    text-align: center;
+    font-family: variables.$title-font, sans-serif;
+}
+
 h2,
 h3,
 h4 {
-    text-align: center;
+    text-align: left;
     font-family: variables.$title-font, sans-serif;
 }
 

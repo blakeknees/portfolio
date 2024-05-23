@@ -20,8 +20,10 @@
                 width: 350px;
                 object-fit: fill;
                 border: 5px solid variables.$img-border;
-                margin-right: 4rem;
-                margin-top: 1.25rem;
+                margin-left: 4rem;
+                margin-top: 1.5rem;
+                border-top-left-radius: 50% 30%;
+                border-top-right-radius: 50% 30%;
             }
 
             p {

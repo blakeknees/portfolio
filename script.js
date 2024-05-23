@@ -1,33 +1,21 @@
 const portfolio = {};
 
 // hamburger menu: https://www.youtube.com/watch?v=flItyHiDm7E&t=2s
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-bar-flex');
+// const hamburger = document.querySelector('.hamburger');
+// const navMenu = document.querySelector('.nav-bar-flex');
 
-hamburger.addEventListener('click', () => {
-	hamburger.classList.toggle('active');
-	navMenu.classList.toggle('active');
-});
+// hamburger.addEventListener('click', () => {
+// 	hamburger.classList.toggle('active');
+// 	navMenu.classList.toggle('active');
+// });
 
-document.querySelectorAll('.nav-link').forEach((link) =>
-	link.addEventListener('click', () => {
-		hamburger.classList.remove('active');
-		navMenu.classList.remove('active');
-	})
-);
+// document.querySelectorAll('.nav-link').forEach((link) =>
+// 	link.addEventListener('click', () => {
+// 		hamburger.classList.remove('active');
+// 		navMenu.classList.remove('active');
+// 	})
+// );
 
-
-
-
-// clearing formspree form
-// tutorial: https://help.formspree.io/hc/en-us/articles/1500009404742-How-to-clear-a-form-after-submission
-portfolio.clearForm = () => {
-
-    const contactForm = document.querySelector('#contact-form');
-    window.onbeforeunload = () => {
-        contactForm.reset();
-    };
-};
 
 // scroll to top button
 // tutorial: https://www.youtube.com/watch?v=FK5DEa1Hvco
@@ -54,8 +42,6 @@ portfolio.scrollToTop = () => {
     });
 };
 
-
-portfolio.clearForm();
-portfolio.scrollToTop();
+// portfolio.scrollToTop();
 
 
