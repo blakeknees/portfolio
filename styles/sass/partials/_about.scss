@@ -8,6 +8,7 @@
         h2 {
             color: variables.$h2purple;
             margin-top: 0;
+            margin-left: 1rem;
             padding-top: 3rem;
         }
 
@@ -26,14 +27,16 @@
                 border-top-right-radius: 50% 30%;
             }
 
-            p {
-                color: variables.$body;
-                text-align: left;
-                line-height: 8mm;
-
-                a {
+            ul {
+                li {
                     color: variables.$body;
-                    text-decoration: underline;
+                    text-align: left;
+                    line-height: 8mm;
+    
+                    a {
+                        color: variables.$body;
+                        text-decoration: underline;
+                    }
                 }
             }
         }

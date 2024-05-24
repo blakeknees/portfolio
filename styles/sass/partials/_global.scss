@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 
-nav,
+li,
 p {
     font-family: variables.$body-font, sans-serif;
 }
@@ -28,10 +28,6 @@ p {
 p {
     font-size: 1rem;;
     text-align: center;
-}
-
-li {
-    list-style: none;
 }
 
 a {

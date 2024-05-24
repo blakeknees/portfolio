@@ -4,6 +4,7 @@
 .about .about-container h2 {
   color: #7e5a9b;
   margin-top: 0;
+  margin-left: 1rem;
   padding-top: 3rem;
 }
 .about .about-container .about-flex {
@@ -23,12 +24,12 @@
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
 }
-.about .about-container .about-flex p {
+.about .about-container .about-flex ul li {
   color: #374b4a;
   text-align: left;
   line-height: 8mm;
 }
-.about .about-container .about-flex p a {
+.about .about-container .about-flex ul li a {
   color: #374b4a;
   text-decoration: underline;
 }
@@ -136,7 +137,7 @@ img {
   max-width: 100%;
 }
 
-nav,
+li,
 p {
   font-family: "Sintony", sans-serif;
 }
@@ -144,10 +145,6 @@ p {
 p {
   font-size: 1rem;
   text-align: center;
-}
-
-li {
-  list-style: none;
 }
 
 a {
@@ -272,7 +269,7 @@ header {
   opacity: 0.6;
   -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
           box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
-  height: 50vh;
+  height: 30vh;
 }
 header .header-text-flex {
   display: -webkit-box;
