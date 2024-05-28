@@ -1,10 +1,13 @@
+.about {
+  margin-bottom: 2rem;
+}
 .about .wrapper {
   background-color: #8b8bae;
 }
 .about .about-container h2 {
   color: #7e5a9b;
   margin-top: 0;
-  margin-left: 1rem;
+  margin-left: 2rem;
   padding-top: 3rem;
 }
 .about .about-container .about-flex {
@@ -19,8 +22,7 @@
   -o-object-fit: fill;
      object-fit: fill;
   border: 5px solid #8fbdbd;
-  margin-left: 4rem;
-  margin-top: 1.5rem;
+  margin: 0 2rem 4rem 1rem;
   border-top-left-radius: 50% 30%;
   border-top-right-radius: 50% 30%;
 }
@@ -39,91 +41,66 @@
 }
 .contact h2 {
   color: #395c78;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
 }
-.contact ul {
-  padding-bottom: 2rem;
-  padding-left: 0;
+.contact a {
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  color: #b322b0;
 }
-.contact ul li i {
+.contact a i {
   font-size: 2rem;
-  padding: 1rem;
+  padding: 0 1rem;
   color: #7e5a9b;
 }
-.contact ul li i:hover {
+.contact a i:hover {
   color: #b322b0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.contact a {
-  color: #b322b0;
-  font-weight: bold;
-}
-.contact .form {
-  margin-bottom: 3rem;
-}
-.contact .form .submit-message {
-  border: 5px solid #f9c2cb;
-  border-radius: 30px;
-}
-.contact .form .submit-message p {
-  color: #2c4553;
-}
-.contact .form .submit-message input, .contact .form .submit-message textarea {
-  border: 2px solid lavender;
-}
-.contact .form .submit-message input {
-  margin-bottom: 15px;
-  padding: 10px 20px;
-  width: 45%;
-  margin-left: 1.3rem;
-}
-.contact .form .submit-message input[type=email] {
-  width: 80%;
-  margin-left: 4rem;
-}
-.contact .form .submit-message textarea {
-  width: 90%;
-  padding: 15px 20px;
-  margin-left: 2.1rem;
-  margin-bottom: 2rem;
-}
-.contact .form .submit-message button {
-  width: 50%;
-  margin-left: 14rem;
-  margin-bottom: 2rem;
-  font-family: "Source Sans Pro";
-}
 
 footer {
-  background-color: #634b66;
+  padding: 0.5rem 0;
 }
-footer .footer-container {
-  margin-top: 1rem;
-}
-footer .footer-container button {
-  font-family: "Sintony";
-  margin: auto;
-  width: 20%;
-}
-footer .footer-container button a {
-  color: #f9fbf2;
-}
-footer .footer-container button a:hover, footer .footer-container button a:focus {
-  color: #374b4a;
-}
-footer .footer-container button:hover, footer .footer-container button:focus {
-  background-color: #bbcbcb;
-  border: 2px solid #bbcbcb;
+footer p {
+  font-family: "Source Sans Pro";
+  color: #b322b0;
+  text-shadow: 1px 1px 1px #7e5a9b;
+  letter-spacing: 1px;
+  padding: 15px 0;
+  margin: 5px;
+  text-align: center;
 }
 
 html {
   font-size: 125%;
 }
 
+main, footer {
+  background-image: url("/assets/cannabis-background.jpg");
+  opacity: 0.8;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+          box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+}
+
 h1 {
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.75mm;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }
 
 h2,
@@ -187,12 +164,6 @@ textarea {
 footer {
   font-weight: 400;
 }
-footer p {
-  font-family: "Source Sans Pro";
-  color: #dfe2cf;
-  padding: 15px 0;
-  text-align: center;
-}
 
 .wrapper {
   width: 60%;
@@ -221,23 +192,6 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-h1 {
-  font-size: 3.5rem;
-  letter-spacing: 0.75mm;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1rem;
 }
 
 header {
@@ -568,12 +522,16 @@ header .header-text-flex p {
     width: 16rem;
   }
 }
+.projects {
+  margin-bottom: 2rem;
+}
 .projects .wrapper {
   background-color: #b288c0;
 }
 .projects h2 {
   color: #395c78;
   margin-top: 4rem;
+  margin-left: 2rem;
 }
 .projects .project-container {
   margin-top: 2rem;
@@ -915,6 +873,9 @@ html {
   text-align: center;
 }
 
+.skills {
+  margin-bottom: 2rem;
+}
 .skills .wrapper {
   background-color: #7698b3;
 }
@@ -925,10 +886,25 @@ html {
 .skills .skills-container h2 {
   color: #3c504a;
   margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.skills .skills-container ul {
+  margin-bottom: 2rem;
+}
+.skills .skills-container ul li {
+  color: #374b4a;
+  text-align: left;
+  line-height: 8mm;
+}
+.skills .skills-container ul li a {
+  color: #374b4a;
+  text-decoration: underline;
+  font-weight: 800;
 }
 .skills .skills-container .tech-stack {
   border: 4px solid #d9dbb1;
   padding: 15px;
+  margin: 0 1rem;
 }
 .skills .skills-container .tech-stack h3 {
   color: #4d5e58;

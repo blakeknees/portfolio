@@ -1,6 +1,8 @@
 @use "./variables";
 
 .projects {
+    margin-bottom: 2rem;
+
     .wrapper{
         background-color: variables.$projects;
     }
@@ -8,6 +10,7 @@
     h2 {
         color: variables.$h2blue;
         margin-top: 4rem;
+        margin-left: 2rem;
     }
 
     .project-container {

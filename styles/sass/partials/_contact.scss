@@ -7,70 +7,22 @@
 
     h2 {
         color: variables.$h2blue;
-        margin-top: 4rem;
+        margin-top: 2rem;
+        margin-left: 2rem;
     }
-    ul {
-        // margin: auto;
-        padding-bottom: 2rem;
-        padding-left: 0;
-        li {
-            i {
-                font-size: 2rem;
-                padding: 1rem;
-                color: variables.$h2purple;
-
-                &:hover {
-                    color: variables.$accent;
-                    transition: 0.3s;
-                }
-            }
-        }
-    }
-
     a {
+        margin-top: 3rem;
+        margin-left: .5rem;
         color: variables.$accent;
-        font-weight: bold;
-    }
-    .form {
-        margin-bottom: 3rem;
-
-        .submit-message {
-
-            border: 5px solid variables.$contact-border;
-            border-radius: 30px;
-
-            p {
-                color: variables.$body2;
-            }
+        
+        i {
+            font-size: 2rem;
+            padding: 0 1rem;
+            color: variables.$h2purple;
     
-            input, textarea {
-                border: 2px solid lavender;
-            }
-
-            input {
-                margin-bottom: 15px;
-                padding: 10px 20px;
-                width: 45%;
-                margin-left: 1.3rem;
-
-            }
-            
-            input[type=email]{
-                width: 80%;
-                margin-left: 4rem;
-            }
-
-            textarea {
-                width: 90%;
-                padding: 15px 20px;
-                margin-left: 2.1rem;
-                margin-bottom: 2rem;
-            }
-            button {
-                width: 50%;
-                margin-left: 14rem;
-                margin-bottom: 2rem;
-                font-family: variables.$title-font;
+            &:hover {
+                color: variables.$accent;
+                transition: 0.3s;
             }
         }
     }

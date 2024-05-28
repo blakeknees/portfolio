@@ -1,6 +1,8 @@
 @use "./variables";
 
 .about {
+    margin-bottom: 2rem;
+
     .wrapper{
         background-color: variables.$header;
     } 
@@ -9,7 +11,7 @@
         h2 {
             color: variables.$h2purple;
             margin-top: 0;
-            margin-left: 1rem;
+            margin-left: 2rem;
             padding-top: 3rem;
         }
 
@@ -22,8 +24,7 @@
                 width: 350px;
                 object-fit: fill;
                 border: 5px solid variables.$img-border;
-                margin-left: 4rem;
-                margin-top: 1.5rem;
+                margin: 0 2rem 4rem 1rem;
                 border-top-left-radius: 50% 30%;
                 border-top-right-radius: 50% 30%;
             }

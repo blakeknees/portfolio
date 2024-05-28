@@ -1,28 +1,14 @@
 @use "./variables";
 
 footer {
-    background-color: variables.$footer;
-
-    .footer-container {
-        margin-top: 1rem;
-
-        button {
-            font-family: variables.$body-font;
-            margin: auto;
-            width: 20%;
-            
-            a {
-                color: variables.$contact;
-
-                &:hover, &:focus {
-                    color: variables.$nav-links;
-                }
-            }
-
-            &:hover, &:focus {
-                background-color: variables.$about;
-                border: 2px solid variables.$about;
-            }
-        }
+    padding: .5rem 0;
+    p {
+        font-family: variables.$title-font;
+        color: variables.$accent;
+        text-shadow: 1px 1px 1px variables.$h2purple;
+        letter-spacing: 1px;
+        padding: 15px 0;
+        margin: 5px;
+        text-align: center;
     }
 }
