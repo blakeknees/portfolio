@@ -1,7 +1,9 @@
 @use "./variables";
 
 .contact {
-    background-color: variables.$contact;
+    .wrapper{
+        background-color: variables.$contact;
+    }
 
     h2 {
         color: variables.$h2blue;

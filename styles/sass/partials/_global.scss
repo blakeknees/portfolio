@@ -87,6 +87,11 @@ footer {
     max-width: 1901px;
 }
 
+.border-bg {
+    background-image: url('/assets/cannabis-background.jpg');
+    opacity: 0.8;
+    box-shadow: inset 0 0 0 1000px #8b8baed9;
+}
 
 .flex {
     display: flex;
@@ -114,34 +119,4 @@ h4 {
     font-size: 1rem;
 }
 
-// OTHER TEXT:
-// button: 22.4px;
-// nav: 29px;
-// body text: 20px;
-
-#to-top {
-    position: fixed;
-    bottom: 15px;
-    right: 16px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 2px solid variables.$accent;
-    font-size: 25px;
-    color: variables.$accent;
-    background-color: variables.$button;
-    text-decoration: none;
-    display: none;
-    
-    i {
-        font-size: 1.75rem;
-    }
-    
-}
-
-#to-top.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 

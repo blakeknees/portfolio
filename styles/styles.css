@@ -1,5 +1,5 @@
-.about {
-  background-color: #bbcbcb;
+.about .wrapper {
+  background-color: #8b8bae;
 }
 .about .about-container h2 {
   color: #7e5a9b;
@@ -34,7 +34,7 @@
   text-decoration: underline;
 }
 
-.contact {
+.contact .wrapper {
   background-color: #f9fbf2;
 }
 .contact h2 {
@@ -200,6 +200,13 @@ footer p {
   max-width: 1901px;
 }
 
+.border-bg {
+  background-image: url("/assets/cannabis-background.jpg");
+  opacity: 0.8;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+          box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,43 +240,12 @@ h4 {
   font-size: 1rem;
 }
 
-#to-top {
-  position: fixed;
-  bottom: 15px;
-  right: 16px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid #b322b0;
-  font-size: 25px;
-  color: #b322b0;
-  background-color: #dfe2cf;
-  text-decoration: none;
-  display: none;
-}
-#to-top i {
-  font-size: 1.75rem;
-}
-
-#to-top.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 header {
-  background-color: #bbcbcb;
   background-image: url("/assets/cannabis-background.jpg");
-  opacity: 0.6;
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
-          box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.85);
-  height: 30vh;
+  opacity: 0.8;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+          box-shadow: inset 0 0 0 1000px rgba(139, 139, 174, 0.8509803922);
+  height: 35vh;
 }
 header .header-text-flex {
   display: -webkit-box;
@@ -300,6 +276,8 @@ header .header-text-flex p {
   font-size: 1.5rem;
   color: #b322b0;
   font-style: italic;
+  text-decoration: underline;
+  text-underline-position: under;
   font-weight: 800;
   letter-spacing: 1mm;
   text-shadow: 2px 2px 2px #7e5a9b;
@@ -590,8 +568,7 @@ header .header-text-flex p {
     width: 16rem;
   }
 }
-.projects {
-  overflow: hidden;
+.projects .wrapper {
   background-color: #b288c0;
 }
 .projects h2 {
@@ -938,7 +915,7 @@ html {
   text-align: center;
 }
 
-.skills {
+.skills .wrapper {
   background-color: #7698b3;
 }
 .skills .skills-container {

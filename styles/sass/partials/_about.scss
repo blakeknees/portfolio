@@ -1,8 +1,9 @@
 @use "./variables";
 
 .about {
-    background-color: variables.$about;
-      
+    .wrapper{
+        background-color: variables.$header;
+    } 
     .about-container {
         
         h2 {

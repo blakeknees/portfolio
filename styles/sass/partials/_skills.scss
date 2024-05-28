@@ -1,7 +1,9 @@
 @use "./variables";
 
 .skills {
-    background-color: variables.$skills;
+    .wrapper{
+        background-color: variables.$skills;
+    }
 
     .skills-container {
         padding-top: 2rem;

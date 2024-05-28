@@ -1,8 +1,9 @@
 @use "./variables";
 
 .projects {
-    overflow: hidden;
-    background-color: variables.$projects;
+    .wrapper{
+        background-color: variables.$projects;
+    }
 
     h2 {
         color: variables.$h2blue;
