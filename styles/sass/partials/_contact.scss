@@ -4,26 +4,26 @@
     .wrapper{
         background-color: variables.$contact;
     }
-
-    h2 {
-        color: variables.$h2blue;
-        margin-top: 2rem;
-        margin-left: 2rem;
-    }
-    a {
-        margin-top: 3rem;
-        margin-left: .5rem;
-        color: variables.$accent;
+        h2 {
+            color: variables.$h2blue;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+        a {
+            margin-top: 3rem;
+            margin-left: .5rem;
+            color: variables.$accent;
+            
+            i {
+                font-size: 2rem;
+                padding: 0 1rem;
+                color: variables.$h2purple;
         
-        i {
-            font-size: 2rem;
-            padding: 0 1rem;
-            color: variables.$h2purple;
-    
-            &:hover {
-                color: variables.$accent;
-                transition: 0.3s;
+                &:hover {
+                    color: variables.$accent;
+                    transition: 0.3s;
+                }
             }
         }
-    }
+    
 }
