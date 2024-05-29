@@ -347,6 +347,10 @@
         .about {
             padding-top: 1rem;
             
+            .wrapper {
+                width: 80%;
+            }
+
             .about-container {
                 h2 {
                     margin: 1rem;
@@ -355,6 +359,7 @@
                 }
                 .about-flex {
                     flex-direction: column-reverse; 
+                    padding-bottom: 1rem;
                     img {
                         height: 70%;
                         width: 70%;
@@ -377,13 +382,14 @@
                 width: 80%;
             }
             .skills-container {
+                padding-top: 1rem;
                 h2 {
                     font-size: 2rem;
-                    margin: 1rem;
+                    margin: 1rem 0 1rem 1.5rem;
                     padding: 0;
                 }
                 ul {
-                    margin: 0 0 1rem 0;
+                    margin: 0 0 1.5rem 0;
                     li {
                         font-size: 14px;
                     }

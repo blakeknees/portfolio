@@ -449,6 +449,9 @@ header .header-text-flex p {
   main .about {
     padding-top: 1rem;
   }
+  main .about .wrapper {
+    width: 80%;
+  }
   main .about .about-container h2 {
     margin: 1rem;
     font-size: 2rem;
@@ -459,6 +462,7 @@ header .header-text-flex p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-bottom: 1rem;
   }
   main .about .about-container .about-flex img {
     height: 70%;
@@ -475,13 +479,16 @@ header .header-text-flex p {
   main .skills .wrapper {
     width: 80%;
   }
+  main .skills .skills-container {
+    padding-top: 1rem;
+  }
   main .skills .skills-container h2 {
     font-size: 2rem;
-    margin: 1rem;
+    margin: 1rem 0 1rem 1.5rem;
     padding: 0;
   }
   main .skills .skills-container ul {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.5rem 0;
   }
   main .skills .skills-container ul li {
     font-size: 14px;
