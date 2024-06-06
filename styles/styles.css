@@ -456,6 +456,7 @@ header .header-text-flex p {
     margin: 1rem;
     font-size: 2rem;
     padding-top: 1rem;
+    padding-bottom: 0;
   }
   main .about .about-container .about-flex {
     -webkit-box-orient: vertical;
@@ -480,7 +481,8 @@ header .header-text-flex p {
     width: 80%;
   }
   main .skills .skills-container {
-    padding-top: 1rem;
+    padding-top: 0;
+    padding-bottom: 2rem;
   }
   main .skills .skills-container h2 {
     font-size: 2rem;
@@ -514,7 +516,23 @@ header .header-text-flex p {
         flex-basis: 0%;
   }
   main .projects .project-container .project-box {
-    width: 12rem;
+    width: 15rem;
+  }
+  main .projects .project-container .project-box .project-content h3, main .projects .project-container .project-box .project-content h4, main .projects .project-container .project-box .project-content p {
+    text-align: left;
+  }
+  main .projects .project-container .project-box .project-content h4, main .projects .project-container .project-box .project-content p {
+    padding: 0 10px;
+  }
+  main .projects .project-container .project-box .project-content .button-box {
+    margin: 10px 0 10px 0;
+  }
+  main .projects .project-container .project-box .project-content .button-box button {
+    margin: 5px;
+    padding: 5px;
+  }
+  main .projects .project-container .project-box .project-content .button-box button a {
+    font-size: 16px;
   }
   main .contact .wrapper {
     width: 80%;

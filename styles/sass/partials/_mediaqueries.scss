@@ -356,6 +356,7 @@
                     margin: 1rem;
                     font-size: 2rem;
                     padding-top: 1rem;
+                    padding-bottom: 0;
                 }
                 .about-flex {
                     flex-direction: column-reverse; 
@@ -382,7 +383,8 @@
                 width: 80%;
             }
             .skills-container {
-                padding-top: 1rem;
+                padding-top: 0;
+                padding-bottom: 2rem;
                 h2 {
                     font-size: 2rem;
                     margin: 1rem 0 1rem 1.5rem;
@@ -422,8 +424,30 @@
             .project-container {
                 flex-wrap: nowrap;
                 flex-basis: 0%;
+
                 .project-box {
-                    width: 12rem;
+                    width: 15rem;
+
+                    .project-content {
+                        h3, h4, p {
+                            text-align: left;
+                        }
+                        h4, p { 
+                            padding: 0 10px;
+                        }
+
+                        .button-box {
+                            margin: 10px 0 10px 0;
+                            button {
+                                margin: 5px;
+                                padding: 5px;
+                                a { 
+                                    font-size: 16px;
+                                }
+                            }
+
+                        }
+                    }
                 }
             }
         }
