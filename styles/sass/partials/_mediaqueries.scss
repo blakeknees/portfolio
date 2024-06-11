@@ -41,14 +41,7 @@
     .wrapper {
         width: 60%;
     }
-
-    /* HEADER & NAV */
-    header {
-        button {
-            margin-top: 1.5rem;
-        }
-    } /* END header */
-
+    
     /* MAIN */
     main {
         .about {
@@ -111,44 +104,7 @@
     } /* END main */
 }
 
-@media (max-width: 1315px) {
-    /* MAIN */
-    main {
-        .projects {
-            .project-box {
-                h3 {
-                 margin: .5rem;
-                }
-            }
-        }
-    }
-}
-
 /* TABLET */
-@media (max-width: 1100px) {
-
-    /* MAIN */
-    main {
-        .projects {
-            .project-container {
-                .project-box {
-                    h3 {
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
-    }
-    footer {
-        .footer-container {
-            button {
-                width: 40%;
-            }
-        }
-    }
-
-}
-
 @media (max-width: 1096px) {
     main {
         .about {
@@ -197,18 +153,6 @@
                         text-align: center;
                     }
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 963px) {
-    /* MAIN */
-    main {
-
-        .projects {
-            button {
-                font-size: .75rem;
             }
         }
     }
@@ -265,13 +209,6 @@
 
         .skills {
             .skills-container {
-                .services {
-                    .service-details{
-                        p {
-                            padding: 0 1rem; 
-                        }
-                    }
-                }
             }
         }
 
@@ -292,44 +229,7 @@
     }
 }
 
-@media (max-width: 591px) {
-    main {
-        .skills {
-                .skills-container {
-                    .services {
-                        .service-details {
-                            padding: 0 10px 0 10px;
-                        }
-                    }
-                }
-        }
-
-        .projects {
-            .wrapper {
-                width: 80%;
-            }
-            .project-container {
-                .project-box {
-                    width: 20rem;
-                    height: 30rem;
-                }
-            }
-        }
-    }
-
-    footer {
-        .footer-container {
-            p {
-                font-size: .99rem;
-            }
-            button {
-                width: 50%;
-            }
-        }
-    }
-}
-
-@media (max-width: 451px) {
+@media (max-width: 551px) {
     /* NAV */
     .header-text-flex {
         width: 80%;
@@ -360,7 +260,7 @@
                 }
                 .about-flex {
                     flex-direction: column-reverse; 
-                    padding-bottom: 1rem;
+                    padding-bottom: 0;
                     img {
                         height: 70%;
                         width: 70%;
@@ -372,6 +272,7 @@
 
                         li {
                             font-size: 14px;
+                            padding-bottom: 5px;
                         }
                     }
                 }
@@ -394,14 +295,17 @@
                     margin: 0 0 1.5rem 0;
                     li {
                         font-size: 14px;
+                        padding-bottom: 5px;
                     }
                 }
                 
                 .tech-stack {
                     h3 {
                         font-size: 1rem;
+                        margin: 10px;
                     }
                     ul {
+                        margin-bottom: 0;
                         li {
                             i {
                                 font-size: 1.5rem;
@@ -464,10 +368,8 @@
             .contact-container {
                 a {
                     margin: 10px;
-
                     i {
                         font-size: 1.5rem;
-                        padding: 10px;
                     }
                 }   
             }
