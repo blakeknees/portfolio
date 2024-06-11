@@ -1,15 +1,6 @@
 @use "./variables";
 
 @media (max-width: 1601px) {
-    /* HEADER */
-    header {
-        nav {
-            button {
-                margin-top: 1.5rem;
-            }
-        }
-    }
-
     /* MAIN */
     main {
         .about {
@@ -41,7 +32,7 @@
     .wrapper {
         width: 60%;
     }
-    
+
     /* MAIN */
     main {
         .about {
@@ -196,13 +187,6 @@
                     justify-content: center;
                     align-items: center;
 
-                    img.rounded{
-                        margin: 0 0 1rem 0;
-                    }
-
-                    p {
-                        text-align: center;
-                    }
                 }
             }
         }
@@ -218,10 +202,9 @@
             }
 
             .project-container {
-                justify-content: center;
                 .project-box {
                     flex-basis: 70%;
-                    width: 25rem;
+                    // width: 25rem;
         
                 }
             }

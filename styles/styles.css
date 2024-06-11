@@ -238,10 +238,6 @@ header .header-text-flex p {
 }
 
 @media (max-width: 1601px) {
-  /* HEADER */
-  header nav button {
-    margin-top: 1.5rem;
-  }
   /* MAIN */
   main .about .about-container .about-flex img.rounded {
     margin-top: 3.5rem;
@@ -367,24 +363,12 @@ header .header-text-flex p {
         -ms-flex-align: center;
             align-items: center;
   }
-  main .about .about-container .about-flex img.rounded {
-    margin: 0 0 1rem 0;
-  }
-  main .about .about-container .about-flex p {
-    text-align: center;
-  }
   main .projects .wrapper {
     width: 90%;
-  }
-  main .projects .project-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   main .projects .project-container .project-box {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
-    width: 25rem;
   }
 }
 @media (max-width: 551px) {
